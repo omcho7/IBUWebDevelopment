@@ -1,75 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>International Burch University</title>
-</head>
-<img src="IBU_logo_reb-02-01.png" width="15%" height="10%" alt="IBU logo" >
-<body>
-    <h3>International Burch University</h3>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <link rel="stylesheet" href="lab2style.css" />
+    <link rel="stylesheet" href="https://fonts.google.com/?query=lato" />
+  </head>
+  <body>
+    <center>
+      <a href="hello.html">
+        <img src="IBU_logo_reb-02-01.png" alt="LOGO" style="width: 10%" />
+      </a>
+      <br />
+      <h2>International Burch University</h2>
+    </center>
+
     <h2>REGISTRATION FORM</h2>
-    <table>
+    <form action="">
+      <table>
         <tr>
-            <td>
-                <label for="fname" >First Name:</label></br>
-                <input type="text" id="fname" name="fname" placeholder="Enter your first name">
-                </br>
-            </td>
-            <td>
-                <label for="lname">Last Name:</label></br>
-                <input type="text" id="lname" name="lname" placeholder="Enter your last name">
-            </td>
+          <td>Firstname:</td>
+          <td>Lastname:</td>
         </tr>
-
         <tr>
-            <td>
-                <label for="user">Username:</label>
-                <input type="text" id="user" name="user">
-        
-            </td>
-            </tr>
-
-            <tr>
-                <td>
-                    <label for="pass">Password:</label>
-                    <input type="text" id="pass" name="pass">
-            
-                </td>
-                </tr>
-
-        <tr>
-            <td>
-                <label for="birth">Date of birth:</label>
-                <input type="date" name="birth" id="birth">
-            </td>
+          <td><input type="text" placeholder="Enter your firstname" /></td>
+          <td><input type="text" placeholder="Enter your lastname" /></td>
         </tr>
-
-
         <tr>
-            <td>
-                <label for="pob">Place of birth:</label>
-                <input type="text" id="pob" name="pob">
-        
-            </td>
-            </tr>
-
-
-        <tr>
-            <td>
-                <label for="gender">Gender:</label>
-            </td>
-            <td>
-                <input type="radio" id="html" name="fav_language" value="HTML">
-                <label for="html">Male</label><br>
-                <input type="radio" id="css" name="fav_language" value="CSS">
-                <label for="css">Female</label><br>
-                <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-                <label for="javascript">Other</label> 
-            </td>
+          <td>Username:</td>
+          <td><input type="text" /></td>
         </tr>
-    </table>
-    
-</body>
-
+        <tr>
+          <td>Password:</td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td>Date of birth:</td>
+          <td><input type="date" /></td>
+        </tr>
+        <tr>
+          <td>Place of birth:</td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td>Gender:</td>
+          <td>
+            <input type="radio" id="radio1" /><label for="radio1">Male</label
+            ><br />
+            <input type="radio" id="radio2" /><label for="radio2">Fenale</label
+            ><br />
+            <input type="radio" id="radio3" /><label for="radio3">Other</label>
+          </td>
+        </tr>
+        <tr>
+          <td>Email:</td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td>Phone:</td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td>Hair colour :</td>
+          <td><input type="color" /></td>
+        </tr>
+        <tr>
+          <td>Notes:</td>
+        </tr>
+        <tr>
+          <td><textarea id="textarea" cols="30" rows="10"></textarea></td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" id="check1" />
+            <label for="check1">Recieve notifications</label>
+          </td>
+        </tr>
+      </table>
+      <a href="hello.html">
+        <button type="button" class="submit">Register</button>
+      </a>
+    </form>
+  </body>
 </html>

@@ -1,0 +1,46 @@
+body {
+    background-color: #85AFD4;
+    color: white;
+    text-align: center;
+    font-family: lato, sans-serif;
+}
+
+table {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-color: white;
+    border-width: 2px;
+    border: solid;
+    padding: 10pt;
+    border-radius: 10pt;
+}
+
+
+h2, h3 {
+    font-weight: 1000;
+}
+
+button {
+    color: white;
+    background-color: #E47272;
+
+    margin: 2.5%;padding: 1%; 
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: large;
+    border-radius: 20pt;
+}
+
+a {
+    font-weight: 800;
+}
+
+input {
+    margin: 3pt;
+    padding: 5pt;
+}
+
+p {
+    padding-top: 10pt;
+}
