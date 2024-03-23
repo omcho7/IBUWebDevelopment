@@ -1,0 +1,65 @@
+.input-group-text{
+    text-decoration: none;
+    background-color: rgb(224, 224, 224);
+    border: none;
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 0%;
+    border-top-left-radius: 20pt;
+    border-bottom-left-radius: 20pt;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 3rem;
+
+}
+
+.form-control{
+    border: none;
+    background-color: rgb(224, 224, 224);
+    border-top-right-radius: 20pt;
+    border-bottom-right-radius: 20pt;
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 0%;
+    
+}
+
+button{
+    border-radius: 5rem;
+    border: none;
+    padding: 10pt;
+    font-size:large;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(15, 220, 52);
+    
+}
+
+p{
+    color: rgb(107, 107, 107);
+}
+
+a{
+    font-weight: 600;
+    text-decoration: none;
+    color: rgb(71, 71, 71);
+}
+
+.container{
+    padding-right: 10rem;
+    padding-bottom: 2rem;
+    padding-top: 7rem;
+    padding-left: 7rem;
+}
+
+.card{
+    margin: 10rem;
+    margin-top: 5rem;
+    border-radius: 1rem;
+}
+
+body{
+    background: rgb(24,13,186);
+background: -moz-linear-gradient(45deg, rgba(24,13,186,1) 0%, rgba(179,19,190,1) 81%);
+background: -webkit-linear-gradient(45deg, rgba(24,13,186,1) 0%, rgba(179,19,190,1) 81%);
+background: linear-gradient(45deg, rgba(24,13,186,1) 0%, rgba(179,19,190,1) 81%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#180dba",endColorstr="#b313be",GradientType=1);
+}
