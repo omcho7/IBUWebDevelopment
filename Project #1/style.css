@@ -21,16 +21,25 @@
   .carousel-caption {
     font-size: x-small;
   }
+
+  .container {
+    display: flex;
+    min-width: 100%;
+    margin-top: 1% !important;
+    flex-direction: column;
+  }
 }
 
 .container {
   font-size: small;
   max-width: 45%;
   margin-right: 20px;
-  margin-top: 20px;
+  margin-top: -380px;
   border-radius: 15px;
   overflow: hidden;
 }
+
+
 
 .carousel-caption {
   display: block !important;
@@ -67,4 +76,9 @@
 
 h5 {
   font-weight: 700;
+}
+
+h2 {
+    font-weight: 600;
+    
 }
