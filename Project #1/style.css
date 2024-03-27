@@ -28,6 +28,12 @@
     margin-top: 1% !important;
     flex-direction: column;
   }
+
+  .player-container{
+    display: flex;
+    flex-direction: row;
+    min-width: 50%;
+  }
 }
 
 .container {
@@ -38,8 +44,6 @@
   border-radius: 15px;
   overflow: hidden;
 }
-
-
 
 .carousel-caption {
   display: block !important;
@@ -79,6 +83,77 @@ h5 {
 }
 
 h2 {
-    font-weight: 600;
-    
+  font-weight: 600;
+}
+
+.player-container {
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  margin-top: 0px;
+  padding-left: 10px;
+  transform: translateY(-10%);
+}
+
+.player-card {
+  width: 15%;
+  margin: 10px;
+  position: relative; /* Added */
+  border: none;
+}
+
+.player-card img {
+  width: 100%;
+  margin-top: 0%;
+  height: auto;
+  border-radius: 25px 25px 0 0;
+  position: absolute;
+  top: 120px; /* Added */
+  transform: translateY(-48%); /* Added */
+  background-color: #0727786b;
+}
+
+.player-name {
+  position: absolute;
+  top: 205px;
+  font-size: x-large;
+  color: white;
+  font-weight: bold;
+  padding: 5px;
+  padding-left: 10px;
+  z-index: 2; /* Added */
+  width: 100%;
+  background: rgb(7,39,120);
+  background: -moz-linear-gradient(0deg, rgba(7,39,120,1) 0%, rgba(13,49,139,0.7063959372811625) 33%, rgba(14,63,187,0.43748837425595233) 54%, rgba(15,77,232,0) 77%);
+  background: -webkit-linear-gradient(0deg, rgba(7,39,120,1) 0%, rgba(13,49,139,0.7063959372811625) 33%, rgba(14,63,187,0.43748837425595233) 54%, rgba(15,77,232,0) 77%);
+  background: linear-gradient(0deg, rgba(7,39,120,1) 0%, rgba(13,49,139,0.7063959372811625) 33%, rgba(14,63,187,0.43748837425595233) 54%, rgba(15,77,232,0) 77%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#072778",endColorstr="#0f4de8",GradientType=1); 
+}
+
+.player-stats {
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: flex-start;
+  height: 25%;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  border-radius: 0 0 5px 5px;
+  margin-top: 250px; /* Added */
+  position: relative; /* Added */
+  z-index: 1; /* Added */
+  background-color: #072778;
+}
+
+.player-stats p {
+    margin: 0;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #ffffff; /* Colored line */
+}
+
+/* Style the last paragraph to remove the border */
+.player-stats p:last-child {
+    border-bottom: none;
 }
