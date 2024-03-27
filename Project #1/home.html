@@ -1,90 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Basketball</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <!-- Bootstrap CSS -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
     />
-    <!-- Bootstrap Icons CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Hello, world!</title>
   </head>
   <body>
-    <div class="pos-f-t">
-      <div class="collapse" id="navbarToggleExternalContent">
-        <div class="bg-dark p-4">
-          <h4 class="text-white">Collapsed content</h4>
-          <span class="text-muted">Toggleable via the navbar brand.</span>
-        </div>
-      </div>
+    <!--Navbar-->
+    <div class="container-fluid" style="padding: 0">
       <nav class="navbar navbar-dark bg-dark">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarToggleExternalContent"
-          aria-controls="navbarToggleExternalContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">All Things Basketball.</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="news.html">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Scores</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
       </nav>
     </div>
 
-    <!-- Content here -->
-
-    <div id="carouselExample" class="carousel slide">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="first.webp" class="d-block w-100 " alt="crnja" style="max-width: 80%; min-height: 80%; margin-left: 10%;">
-          </div>
-          <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="drugi crnja">
-          </div>
-          <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="treci crnja">
+    <!--Carousel-->
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="luka.avif" class="d-block w-100" alt="luka-doncic" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Dallas Maverick secure playoff spot!</h5>
+            <p>
+              Luka Doncic and Kyrie Irving combine for 70 points and secure the
+              5th seed ahead of the season finale.
+            </p>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>    
+        <div class="carousel-item">
+          <img src="realm.jpeg" class="d-block w-100" alt="Real-Madrid" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Real Madrid beat Partizan 88-76</h5>
+            <p>
+              Madrid's best starts held out agressive Partizan for the 1st place
+              in standings.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="jaka.JPG" class="d-block w-100" alt="jaka-blazic" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>ABA League Week 24 MVP: Jaka Blazic</h5>
+            <p>
+              Blažič dominated the court in Stožice Arena in the game of his
+              team against Mornar-Barsko zlato.
+            </p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
 
+    <!--Scoreboards-->
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2>NBA Scoreboard</h2>
+          <div class="card">
+            <div class="card-body">
+              <div class="row">
+                <div class="col">Date</div>
+                <div class="col">Team 1</div>
+                <div class="col">Score</div>
+                <div class="col">Team 2</div>
+              </div>
+              <!-- Repeat this row for each match -->
+              <div class="row">
+                <div class="col">2024-03-27</div>
+                <div class="col">Team 1</div>
+                <div class="col">100 - 95</div>
+                <div class="col">Team 2</div>
+              </div>
+              <!-- End of match row -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h2>Euroleague Scoreboard</h2>
+          <div class="card">
+            <div class="card-body">
+              <div class="row">
+                <div class="col">Date</div>
+                <div class="col">Team 1</div>
+                <div class="col">Score</div>
+                <div class="col">Team 2</div>
+              </div>
+              <!-- Repeat this row for each match -->
+              <div class="row">
+                <div class="col">2024-03-27</div>
+                <div class="col">Team 1</div>
+                <div class="col">100 - 95</div>
+                <div class="col">Team 2</div>
+              </div>
+              <!-- End of match row -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h2>ABA League Scoreboard</h2>
+          <div class="card">
+            <div class="card-body">
+              <div class="row">
+                <div class="col">Date</div>
+                <div class="col">Team 1</div>
+                <div class="col">Score</div>
+                <div class="col">Team 2</div>
+              </div>
+              <!-- Repeat this row for each match -->
+              <div class="row">
+                <div class="col">2024-03-27</div>
+                <div class="col">Team 1</div>
+                <div class="col">100 - 95</div>
+                <div class="col">Team 2</div>
+              </div>
+              <!-- End of match row -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <!-- Optional JavaScript; choose one of the two! -->
 
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
 
-    <footer class="bg-dark text-white text-center py-3">
-      <small>
-        <p>
-          Copyright © 2024 Omar Osmanovic |
-          <a
-            href="mailto:osmanovicomar@gmail.com"
-            style="text-decoration: none; color: white"
-            >Contact</a
-          >
-        </p>
-      </small>
-    </footer>
-
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <!-- Popper.js -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
   </body>
 </html>
