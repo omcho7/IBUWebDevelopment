@@ -6,8 +6,9 @@
 /* Media query for screens smaller than 768 pixels */
 @media (max-width: 768px) {
   .carousel {
-    min-width: 90%;
+    min-width: 100%;
     margin: 5px;
+    margin-left: 0% !important;
   }
 
   .carousel-caption {
@@ -19,6 +20,10 @@
     min-width: 100%;
     margin-top: 1% !important;
     flex-direction: column;
+    transform: translateY(0%) !important;
+  }
+
+  .weekly-container{
     transform: translateY(0%) !important;
   }
 
@@ -56,19 +61,37 @@ body {
     overflow-x: hidden;
   background-color: rgb(47, 58, 68);
   font-family: Poppins;
-  font-size: medium;
+  font-size: small;
+  
+  
+
 }
 
-.carousel {
-  max-width: 47%;
-  margin-left: 20px;
-  margin-top: 40px;
+.latest-card {
+    margin-left: 50.5%;
+    width: 38%;
+    
+    
+}
 
+.list-group-item {
+    background-color: rgb(67, 92, 114);
+    text-decoration: none;
+    color: white;
+}
+
+
+.carousel {
+  max-width: 40%;
+  margin-left: 10%;
+  margin-top: 20px;
+  margin-bottom: -4%;
   overflow: hidden;
+  transform: scale(90%);
 }
 
 .carousel-inner {
-  border-radius: 15px;
+  border-radius: 0px 0px 15px 15px;
   overflow: hidden;
   border: 1pt solid rgba(99, 138, 173, 0.444);
 }
@@ -83,19 +106,26 @@ body {
   margin-left: 4%;
 }
 
+
+.card-body {
+    border-radius:  0px 0px 15px 15px;
+}
+
 .container {
-  font-size: large;
-  max-width: 50%;
-  margin-right: 20px;
-  margin-top: -380px;
-  border-radius: 15px;
+  font-size: small;
+  max-width: 45%;
+  margin-right: 8%;
+  margin-top: -350px;
+  
   overflow: hidden;
   z-index: 1;
-  transform: translateY(-18.1%);
+  transform: translateY(-32.2%);
+  transform: scale(90%);
+  
 }
 
 .row.first {
-  font-size: larger;
+  font-size: medium;
   border-bottom: 2pt solid rgb(99, 139, 173);
   border-bottom-left-radius: 20%;
   border-bottom-right-radius: 20%;
@@ -144,7 +174,7 @@ h5 {
   font-weight: 700;
 }
 
-h2 {
+h3 {
   padding-top: 5px;
   position: relative;
   z-index: 1;
@@ -172,16 +202,27 @@ header::before {
   z-index: -1;
 }
 
+.weekly-container {
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-90%) scale(0.818);
+    margin-left: 1.5%;
+    width: 100%;
+    
+}
+
 .player-container {
-  width: min-content;
-  transform: translateY(-70%);
+    display: flex;
+    flex-direction: row;
+    width: min-content;
+  /*transform: translateY(-70%);*/
 }
 
 .player-card {
   position: relative;
   width: 11%;
   border: 1pt solid rgba(99, 138, 173, 0.444);
-  border-radius: 30px 30px 0% 0%;
+  border-radius: 0px 0px 15px 15px;
 }
 
 .card-img-top {
@@ -247,6 +288,7 @@ strong {
   padding-top: 5%;
   border-bottom-style: dashed;
   border-bottom-width: 2px;
+  
 }
 
 /* Remove top padding from the first element */
@@ -257,6 +299,7 @@ strong {
 /* Remove dashed underline from the last element */
 .stats:last-child {
   border-bottom-style: none;
+  border-radius: 0px 0px 15px 15px;
 }
 
 .player-container {
@@ -285,7 +328,9 @@ ul {
 
 .video-container {
   max-width: 100%;
-  transform: translateY(-100%);
+  margin-left: 0.8%;
+  transform: translateY(-190%) scale(0.8);
+
 }
 
 .card.videos {
@@ -294,6 +339,7 @@ ul {
 
 
 footer {
+    font-size: small;
     background-color: rgb(38, 52, 64);
     color: rgb(103, 141, 174);
     padding: 30px 0;
@@ -331,3 +377,40 @@ footer {
     color: #f8f9fa;
     text-decoration: none;
 }
+
+
+.custom-container {
+    position: relative;
+    transform: translateX(132.5%) translateY(-318%);
+    width: 578.25px; 
+    height: 100px; 
+    overflow: hidden;
+    border: 1px solid #ccc; 
+    background-color: #ddc82c;
+  
+    .banner {
+      width: fit-content; 
+      overflow: hidden;
+      white-space: nowrap; 
+  
+      .sponsor-logos {
+        display: inline-block;
+        animation: scroll 20s linear infinite; 
+  
+        img {
+            margin-top: 20px;
+          margin-right: 60px; 
+        }
+      }
+    }
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%); 
+    }
+  }
+  
