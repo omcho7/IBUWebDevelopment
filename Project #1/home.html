@@ -1,708 +1,714 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
-    />
-
-    <link rel="stylesheet" href="style.css" />
-
-    <title>ATB - All Things Baksetball.</title>
-    <link rel="icon" type="image/png" href="Pictures/atblogo.png" />
-  </head>
-  <body>
-    <!--Navbar-->
-    <div class="container-fluid" style="padding: 0">
-      <nav class="navbar navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"
-            ><img
-              src="Pictures/atblogo.png"
-              alt="Logo"
-              style="width: 8%; padding: 10px"
-            />
-            All Things Basketball.</a
-          >
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="news.html">News</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="scores.html">Scores</a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
-          </div>
-        </div>
-      </nav>
-    </div>
-
-    <!--Carousel-->
-    <div
-      id="carouselExampleIndicators"
-      class="carousel slide"
-      data-bs-ride="carousel"
-    >
-      <header>
-        <h2 style="padding: 5px; margin-left: 5px">
-          <i class="bi bi-newspaper" style="margin-right: 15px"></i>News
-        </h2>
-      </header>
-      <div class="carousel-indicators">
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="0"
-          class="active"
-          aria-current="true"
-          aria-label="Slide 1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="2"
-          aria-label="Slide 3"
-        ></button>
-      </div>
-
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img
-            src="Pictures/luka.avif"
-            class="d-block w-100"
-            alt="luka-doncic"
-          />
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Dallas Maverick secure playoff spot!</h5>
-            <p>
-              Luka Doncic and Kyrie Irving combine for 70 points and secure the
-              5th seed ahead of the season finale.
-            </p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img
-            src="Pictures/realm.jpeg"
-            class="d-block w-100"
-            alt="Real-Madrid"
-          />
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Real Madrid beat Partizan 88-76</h5>
-            <p>
-              Madrid's best starts held out agressive Partizan for the 1st place
-              in standings.
-            </p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img
-            src="Pictures/jaka.JPG"
-            class="d-block w-100"
-            alt="jaka-blazic"
-          />
-          <div class="carousel-caption d-none d-md-block">
-            <h5>ABA League Week 24 MVP: Jaka Blazič</h5>
-            <p>
-              Blažič dominated the court in Stožice Arena in the game of his
-              team against Mornar-Barsko zlato.
-            </p>
-          </div>
-        </div>
-      </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-
-
-    <!--Sponsor Banner-->
-    <div class="custom-container">
-      <div class="banner">
-        <div class="sponsor-logos">
-          <img src="Pictures/spalding.png" alt="Sponsor 1" style="width: 140px; height: 50px;">
-          <img src="Pictures/gatorade.png" alt="Sponsor 2" style="width: 80px; height: 50px;">
-          <img src="Pictures/adidas.svg" alt="Sponsor 3" style="width: 80px; height: 50px;">
-          <img src="Pictures/tissot.png" alt="Sponsor 4" style="width: 140px; height: 50px;">
-          <img src="Pictures/turk.png" alt="Sponsor 1" style="width: 170px; height: 50px;">
-          <img src="Pictures/ps5.png" alt="Sponsor 1" style="width: 190px; height: 50px;">
-          <!-- Add more sponsor logos here -->
-          <img src="Pictures/spalding.png" alt="Sponsor 1" style="width: 140px; height: 50px;">
-          <img src="Pictures/gatorade.png" alt="Sponsor 2" style="width: 80px; height: 50px;">
-          <img src="Pictures/adidas.svg" alt="Sponsor 3" style="width: 80px; height: 50px;">
-          <img src="Pictures/tissot.png" alt="Sponsor 4" style="width: 140px; height: 50px;">
-          <img src="Pictures/turk.png" alt="Sponsor 1" style="width: 170px; height: 50px;">
-          <img src="Pictures/ps5.png" alt="Sponsor 1" style="width: 190px; height: 50px;">
-        </div>
-      </div>
-    </div>
-    
-    
-
-    <!--Scoreboards-->
-    <div class="container">
-      <div class="row" style="margin-bottom: 30px">
-        <div class="col">
-          <header>
-            <h3>
-              <img
-                src="Pictures/nbalogo.png"
-                alt="NBA-logo"
-                style="width: 3%; margin: 5px"
-              />NBA Scoreboard
-            </h3>
-          </header>
-          <div class="card">
-            <div class="card-body">
-              <div class="row first">
-                <div class="col-2">Date</div>
-                <div class="col-4">Home</div>
-                <div class="col-2">Score</div>
-                <div class="col-4">Away</div>
-              </div>
-
-              <div class="row">
-                <div class="col-2">2024-03-27</div>
-                <div class="col-4">
-                  <img src="Pictures/lak.png" class="scolo" alt="lakers" />Los
-                  Angeles Lakers
-                </div>
-                <div class="col-2">136 - 124</div>
-                <div class="col-4">
-                  Memphis Grizzlies<img
-                    src="Pictures/grizz.png"
-                    class="scolo"
-                    alt="grizzlies"
-                  />
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-2">2024-03-27</div>
-                <div class="col-4">
-                  <img
-                    src="Pictures/clips.png"
-                    class="scolo"
-                    alt="clippers"
-                  />Los Angeles Clippers
-                </div>
-                <div class="col-2">108 - 107</div>
-                <div class="col-4">
-                  Philadelphia 76ers<img
-                    src="Pictures/76ers.png"
-                    class="scolo"
-                    alt="76ers"
-                  />
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-2">2024-03-27</div>
-                <div class="col-4">
-                  <img
-                    src="Pictures/hou.png"
-                    class="scolo"
-                    alt="rockets"
-                  />Houston Rockets
-                </div>
-                <div class="col-2">132 - 126</div>
-                <div class="col-4">
-                  Oklahoma City Thunder<img
-                    src="Pictures/okc.png"
-                    class="scolo"
-                    alt="thunder"
-                    style="width: 20px; margin-right: 0%"
-                  />
-                </div>
-              </div>
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <!-- Bootstrap CSS -->
+      <link
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+         rel="stylesheet"
+         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+         crossorigin="anonymous"
+         />
+      <link
+         rel="stylesheet"
+         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
+         />
+      <link rel="stylesheet" href="style.css" />
+      <title>ATB - All Things Basketball.</title>
+      <link rel="icon" type="image/png" href="Pictures/atblogo.png" />
+   </head>
+   <body>
+      <div class="container-fluid">
+         <div class="row" style="padding: 0%;">
+            <!--Navbar-->
+            <div class="col" style="padding: 0%;">
+               <!--Navbar-->
+               <div class="container-fluid" style="padding: 0">
+                  <nav class="navbar navbar-dark bg-dark">
+                     <div class="container-fluid">
+                        <a class="navbar-brand" href="#"
+                           ><img
+                           src="Pictures/atblogo.png"
+                           alt="Logo"
+                           style="width: 5%;"
+                           />
+                        All Things Basketball.</a
+                           >
+                        <button
+                           class="navbar-toggler"
+                           type="button"
+                           data-bs-toggle="collapse"
+                           data-bs-target="#navbarSupportedContent"
+                           aria-controls="navbarSupportedContent"
+                           aria-expanded="false"
+                           aria-label="Toggle navigation"
+                           >
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                              <li class="nav-item">
+                                 <a class="nav-link active" aria-current="page" href="#">Home</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="news.html">News</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="scores.html">Scores</a>
+                              </li>
+                           </ul>
+                           <form class="d-flex">
+                              <input
+                                 class="form-control me-2"
+                                 type="search"
+                                 placeholder="Search"
+                                 aria-label="Search"
+                                 />
+                              <button class="btn btn-outline-success" type="submit">
+                              Search
+                              </button>
+                           </form>
+                        </div>
+                     </div>
+                  </nav>
+               </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="row" style="margin-bottom: 30px">
-        <div class="col">
-          <header>
-            <h3>
-              <img
-                src="Pictures/euroleague.png"
-                alt="NBA-logo"
-                style="width: 4%; margin: 10px"
-              />Euroleague Scoreboard
-            </h3>
-          </header>
-          <div class="card">
-            <div class="card-body">
-              <div class="row first">
-                <div class="col-2">Date</div>
-                <div class="col-4">Home</div>
-                <div class="col-2">Score</div>
-                <div class="col-4">Away</div>
-              </div>
-
-              <div class="row">
-                <div class="col-2">2024-03-28</div>
-                <div class="col-4">
-                  <img
-                    src="Pictures/zalg.png"
-                    class="scolo"
-                    alt="zalgiris"
-                  />Zalgiris Kaunas
-                </div>
-                <div class="col-2">87-73</div>
-                <div class="col-4">
-                  EA7 Milan<img
-                    src="Pictures/ea7.png"
-                    class="scolo"
-                    alt="ea7 milan"
-                  />
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-2">2024-03-28</div>
-                <div class="col-4">
-                  <img
-                    src="Pictures/bay.png"
-                    class="scolo"
-                    alt="bayern"
-                  />Bayern Munich
-                </div>
-                <div class="col-2">79-87</div>
-                <div class="col-4">
-                  Barcelona<img
-                    src="Pictures/barca.png"
-                    class="scolo"
-                    alt="barcelona"
-                  />
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-2">2024-03-28</div>
-                <div class="col-4">
-                  <img
-                    src="Pictures/part.png"
-                    class="scolo"
-                    alt="partizan"
-                  />Partizan MB Belgrade
-                </div>
-                <div class="col-2">69-74</div>
-                <div class="col-4">
-                  Olympiacos Piraeus<img
-                    src="Pictures/olymp.png"
-                    class="scolo"
-                    alt="olympiacos"
-                  />
-                </div>
-              </div>
+         </div>
+         <div class="row">
+          <!--Carousel and Weekly MVPs-->
+            <div class="col">
+               <!--Carousel-->
+               <div
+                  id="carouselExampleIndicators"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                  >
+                  <header>
+                     <h2 style="padding: 5px; margin-left: 5px">
+                        <i class="bi bi-newspaper" style="margin-right: 15px"></i>News
+                     </h2>
+                  </header>
+                  <div class="carousel-indicators" style="padding-bottom: 2%;">
+                     <button
+                        type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="0"
+                        class="active"
+                        aria-current="true"
+                        aria-label="Slide 1"
+                        ></button>
+                     <button
+                        type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="1"
+                        aria-label="Slide 2"
+                        ></button>
+                     <button
+                        type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="2"
+                        aria-label="Slide 3"
+                        ></button>
+                  </div>
+                  <div class="carousel-inner">
+                     <div class="carousel-item active">
+                        <img
+                           src="Pictures/luka.avif"
+                           class="d-block w-100"
+                           alt="luka-doncic"
+                           />
+                        <div class="carousel-caption d-none d-md-block">
+                           <h5>Dallas Maverick secure playoff spot!</h5>
+                           <p>
+                              Luka Doncic and Kyrie Irving combine for 70 points and secure the
+                              5th seed ahead of the season finale.
+                           </p>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <img
+                           src="Pictures/realm.jpeg"
+                           class="d-block w-100"
+                           alt="Real-Madrid"
+                           />
+                        <div class="carousel-caption d-none d-md-block">
+                           <h5>Real Madrid beat Partizan 88-76</h5>
+                           <p>
+                              Madrid's best starts held out agressive Partizan for the 1st place
+                              in standings.
+                           </p>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <img
+                           src="Pictures/jaka.JPG"
+                           class="d-block w-100"
+                           alt="jaka-blazic"
+                           />
+                        <div class="carousel-caption d-none d-md-block">
+                           <h5>ABA League Week 24 MVP: Jaka Blazič</h5>
+                           <p>
+                              Blažič dominated the court in Stožice Arena in the game of his
+                              team against Mornar-Barsko zlato.
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <button
+                     class="carousel-control-prev"
+                     type="button"
+                     data-bs-target="#carouselExampleIndicators"
+                     data-bs-slide="prev"
+                     >
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button
+                     class="carousel-control-next"
+                     type="button"
+                     data-bs-target="#carouselExampleIndicators"
+                     data-bs-slide="next"
+                     >
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                  </button>
+               </div>
+               <!--Player Cards-->
+               <div class="weekly-container">
+                  <header style="margin-bottom: 1%;">
+                     <h4 class="card-title nbavideo">
+                        <i class="bi bi-trophy" style="margin-right: 10px; margin-left: 7px;"></i>MVPs of the Week
+                     </h4>
+                  </header>
+                  <div class="player-container">
+                     <div class="player-card nba">
+                        <div class="card-header">NBA Weekly MVP :</div>
+                        <div class="card-body" style="padding-top: 0px">
+                           <h5 class="card-title name">LeBron James</h5>
+                        </div>
+                        <img
+                           src="Pictures/lebron.webp"
+                           class="card-img-top"
+                           alt="LeBronJames"
+                           />
+                        <ul class="list-group list-group-flush">
+                           <li class="stats"><strong>23.5</strong> PPG</li>
+                           <li class="stats"><strong>7.5</strong> APG</li>
+                           <li class="stats"><strong>10.5</strong> RPG</li>
+                           <li class="stats"><strong>64.2</strong> FG%</li>
+                           <li class="stats"><strong>33.8</strong> 3P%</li>
+                           <li class="stats"><strong>76.9</strong> FT%</li>
+                           <li class="stats"><strong>23.39</strong> PER</li>
+                        </ul>
+                     </div>
+                     <div class="player-card eur">
+                        <div class="card-header">Euroleague Weekly MVP :</div>
+                        <div class="card-body" style="padding-top: 0px">
+                           <h5 class="card-title name">Mike James</h5>
+                        </div>
+                        <img src="Pictures/mike.png" class="card-img-top" alt="MikeJames" />
+                        <ul class="list-group list-group-flush">
+                           <li class="stats"><strong>23.5</strong> PPG</li>
+                           <li class="stats"><strong>7.5</strong> APG</li>
+                           <li class="stats"><strong>10.5</strong> RPG</li>
+                           <li class="stats"><strong>64.2</strong> FG%</li>
+                           <li class="stats"><strong>33.8</strong> 3P%</li>
+                           <li class="stats"><strong>76.9</strong> FT%</li>
+                           <li class="stats"><strong>23.39</strong> PER</li>
+                        </ul>
+                     </div>
+                     <div class="player-card aba">
+                        <div class="card-header">ABA League Weekly MVP :</div>
+                        <div class="card-body" style="padding-top: 0px">
+                           <h5 class="card-title name">Kenan Kamenjaš</h5>
+                        </div>
+                        <img src="Pictures/keno.png" class="card-img-top" alt="KenanKamenjas" />
+                        <ul class="list-group list-group-flush">
+                           <li class="stats"><strong>23.5</strong> PPG</li>
+                           <li class="stats"><strong>7.5</strong> APG</li>
+                           <li class="stats"><strong>10.5</strong> RPG</li>
+                           <li class="stats"><strong>64.2</strong> FG%</li>
+                           <li class="stats"><strong>33.8</strong> 3P%</li>
+                           <li class="stats"><strong>76.9</strong> FT%</li>
+                           <li class="stats"><strong>23.39</strong> PER</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="row" style="margin-bottom: 30px">
-        <div class="col">
-          <header>
-            <h3>
-              <img
-                src="Pictures/abalogo.png"
-                alt="NBA-logo"
-                style="width: 3%; margin: 5px"
-              />ABA League Scoreboard
-            </h3>
-          </header>
-          <div class="card">
-            <div class="card-body">
-              <div class="row first">
-                <div class="col-2">Date</div>
-                <div class="col-4">Home</div>
-                <div class="col-2">Score</div>
-                <div class="col-4">Away</div>
-              </div>
-
-              <div class="row">
-                <div class="col-2">2024-03-23</div>
-                <div class="col-4">
-                  <img
-                    src="Pictures/ced.png"
-                    class="scolo"
-                    alt="cedevita"
-                  />Cedevita Olimpija
-                </div>
-                <div class="col-2">105-89</div>
-                <div class="col-4">
-                  Mornar-Barsko zlato<img
-                    src="Pictures/morn.png"
-                    class="scolo"
-                    alt="mornar"
-                  />
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-2">2024-03-25</div>
-                <div class="col-4">
-                  <img
-                    src="Pictures/zvez.png"
-                    class="scolo"
-                    alt="zvezda"
-                  />Crvena Zvezda MB
-                </div>
-                <div class="col-2">83-89</div>
-                <div class="col-4">
-                  Mega MIS<img
-                    src="Pictures/mega.png"
-                    class="scolo"
-                    alt="mega"
-                  />
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-2">2024-03-21</div>
-                <div class="col-4">
-                  <img src="Pictures/fmp.png" class="scolo" alt="fmp" />FMP
-                  Soccerbet
-                </div>
-                <div class="col-2">84-76</div>
-                <div class="col-4">
-                  Buducnost VOLI<img
-                    src="Pictures/budu.png"
-                    class="scolo"
-                    alt="buducnost"
-                  />
-                </div>
-              </div>
+            <!--Banner, Scoreboard, Latest-->
+            <div class="col">
+               <!--Sponsor Banner-->
+               <div class="custom-container">
+                  <div class="banner">
+                     <div class="sponsor-logos">
+                        <img src="Pictures/spalding.png" alt="Sponsor 1" style="width: 140px; height: 50px;">
+                        <img src="Pictures/gatorade.png" alt="Sponsor 2" style="width: 80px; height: 50px;">
+                        <img src="Pictures/adidas.svg" alt="Sponsor 3" style="width: 80px; height: 50px;">
+                        <img src="Pictures/tissot.png" alt="Sponsor 4" style="width: 140px; height: 50px;">
+                        <img src="Pictures/turk.png" alt="Sponsor 1" style="width: 170px; height: 50px;">
+                        <img src="Pictures/ps5.png" alt="Sponsor 1" style="width: 190px; height: 50px;">
+                        <!-- Add more sponsor logos here -->
+                        <img src="Pictures/spalding.png" alt="Sponsor 1" style="width: 140px; height: 50px;">
+                        <img src="Pictures/gatorade.png" alt="Sponsor 2" style="width: 80px; height: 50px;">
+                        <img src="Pictures/adidas.svg" alt="Sponsor 3" style="width: 80px; height: 50px;">
+                        <img src="Pictures/tissot.png" alt="Sponsor 4" style="width: 140px; height: 50px;">
+                        <img src="Pictures/turk.png" alt="Sponsor 1" style="width: 170px; height: 50px;">
+                        <img src="Pictures/ps5.png" alt="Sponsor 1" style="width: 190px; height: 50px;">
+                     </div>
+                  </div>
+               </div>
+               <!--Scoreboards-->
+               <div class="container">
+                  <div class="row" style="margin-bottom: 30px">
+                     <div class="col">
+                        <header>
+                           <h3>
+                              <img
+                                 src="Pictures/nbalogo.png"
+                                 alt="NBA-logo"
+                                 style="width: 3%; margin: 5px"
+                                 />NBA Scoreboard
+                           </h3>
+                        </header>
+                        <div class="card">
+                           <div class="card-body">
+                              <div class="row first">
+                                 <div class="col-2">Date</div>
+                                 <div class="col-4">Home</div>
+                                 <div class="col-2">Score</div> 
+                                 <div class="col-4">Away</div>
+                              </div>
+                              <div class="row" style="border-bottom: 1pt solid rgb(187, 187, 187); padding-bottom: 1%;">
+                                 <div class="col-2">2024-03-27</div>
+                                 <div class="col-4">
+                                    <img src="Pictures/lak.png" class="scolo" alt="lakers" />Los
+                                    Angeles Lakers
+                                 </div>
+                                 <div class="col-2">136 - 124</div>
+                                 <div class="col-4">
+                                    Memphis Grizzlies<img
+                                       src="Pictures/grizz.png"
+                                       class="scolo"
+                                       alt="grizzlies"
+                                       />
+                                 </div>
+                              </div>
+                              <div class="row" style="border-bottom: 1pt solid rgb(187, 187, 187); padding-bottom: 1%; padding-top: 1%;">
+                                 <div class="col-2">2024-03-27</div>
+                                 <div class="col-4">
+                                    <img
+                                       src="Pictures/clips.png"
+                                       class="scolo"
+                                       alt="clippers"
+                                       />Los Angeles Clippers
+                                 </div>
+                                 <div class="col-2">108 - 107</div>
+                                 <div class="col-4">
+                                    Philadelphia 76ers<img
+                                       src="Pictures/76ers.png"
+                                       class="scolo"
+                                       alt="76ers"
+                                       />
+                                 </div>
+                              </div>
+                              <div class="row" style="padding-top: 1%;">
+                                 <div class="col-2">2024-03-27</div>
+                                 <div class="col-4">
+                                    <img
+                                       src="Pictures/hou.png"
+                                       class="scolo"
+                                       alt="rockets"
+                                       />Houston Rockets
+                                 </div>
+                                 <div class="col-2">132 - 126</div>
+                                 <div class="col-4">
+                                    Oklahoma City Thunder<img
+                                       src="Pictures/okc.png"
+                                       class="scolo"
+                                       alt="thunder"
+                                       
+                                       />
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row" style="margin-bottom: 30px">
+                     <div class="col">
+                        <header>
+                           <h3>
+                              <img
+                                 src="Pictures/euroleague.png"
+                                 alt="NBA-logo"
+                                 style="width: 4%; margin: 10px"
+                                 />Euroleague Scoreboard
+                           </h3>
+                        </header>
+                        <div class="card">
+                           <div class="card-body">
+                              <div class="row first">
+                                 <div class="col-2">Date</div>
+                                 <div class="col-4">Home</div>
+                                 <div class="col-2">Score</div>
+                                 <div class="col-4">Away</div>
+                              </div>
+                              <div class="row" style="border-bottom: 1pt solid rgb(187, 187, 187); padding-bottom: 1%;">
+                                 <div class="col-2">2024-03-28</div>
+                                 <div class="col-4">
+                                    <img
+                                       src="Pictures/zalg.png"
+                                       class="scolo"
+                                       alt="zalgiris"
+                                       />Zalgiris Kaunas
+                                 </div>
+                                 <div class="col-2">87-73</div>
+                                 <div class="col-4">
+                                    EA7 Milan<img
+                                       src="Pictures/ea7.png"
+                                       class="scolo"
+                                       alt="ea7 milan"
+                                       />
+                                 </div>
+                              </div>
+                              <div class="row" style="border-bottom: 1pt solid rgb(187, 187, 187); padding-bottom: 1%; padding-top: 1%;">
+                                 <div class="col-2">2024-03-28</div>
+                                 <div class="col-4">
+                                    <img
+                                       src="Pictures/bay.png"
+                                       class="scolo"
+                                       alt="bayern"
+                                       />Bayern Munich
+                                 </div>
+                                 <div class="col-2">79-87</div>
+                                 <div class="col-4">
+                                    Barcelona<img
+                                       src="Pictures/barca.png"
+                                       class="scolo"
+                                       alt="barcelona"
+                                       />
+                                 </div>
+                              </div>
+                              <div class="row" style="padding-top: 1%;">
+                                 <div class="col-2">2024-03-28</div>
+                                 <div class="col-4">
+                                    <img
+                                       src="Pictures/part.png"
+                                       class="scolo"
+                                       alt="partizan"
+                                       />Partizan MB Belgrade
+                                 </div>
+                                 <div class="col-2">69-74</div>
+                                 <div class="col-4">
+                                    Olympiacos Piraeus<img
+                                       src="Pictures/olymp.png"
+                                       class="scolo"
+                                       alt="olympiacos"
+                                       />
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row" style="margin-bottom: 30px">
+                     <div class="col">
+                        <header>
+                           <h3>
+                              <img
+                                 src="Pictures/abalogo.png"
+                                 alt="NBA-logo"
+                                 style="width: 3%; margin: 5px"
+                                 />ABA League Scoreboard
+                           </h3>
+                        </header>
+                        <div class="card">
+                           <div class="card-body">
+                              <div class="row first">
+                                 <div class="col-2">Date</div>
+                                 <div class="col-4">Home</div>
+                                 <div class="col-2">Score</div>
+                                 <div class="col-4">Away</div>
+                              </div>
+                              <div class="row" style="border-bottom: 1pt solid rgb(187, 187, 187); padding-bottom: 1%;">
+                                 <div class="col-2">2024-03-23</div>
+                                 <div class="col-4">
+                                    <img
+                                       src="Pictures/ced.png"
+                                       class="scolo"
+                                       alt="cedevita"
+                                       />Cedevita Olimpija
+                                 </div>
+                                 <div class="col-2">105-89</div>
+                                 <div class="col-4">
+                                    Mornar-Barsko zlato<img
+                                       src="Pictures/morn.png"
+                                       class="scolo"
+                                       alt="mornar"
+                                       />
+                                 </div>
+                              </div>
+                              <div class="row" style="border-bottom: 1pt solid rgb(187, 187, 187); padding-bottom: 1%; padding-top: 1%;">
+                                 <div class="col-2">2024-03-25</div>
+                                 <div class="col-4">
+                                    <img
+                                       src="Pictures/zvez.png"
+                                       class="scolo"
+                                       alt="zvezda"
+                                       />Crvena Zvezda MB
+                                 </div>
+                                 <div class="col-2">83-89</div>
+                                 <div class="col-4">
+                                    Mega MIS<img
+                                       src="Pictures/mega.png"
+                                       class="scolo"
+                                       alt="mega"
+                                       />
+                                 </div>
+                              </div>
+                              <div class="row" style="padding-top: 1%;">
+                                 <div class="col-2">2024-03-21</div>
+                                 <div class="col-4">
+                                    <img src="Pictures/fmp.png" class="scolo" alt="fmp" />FMP
+                                    Soccerbet
+                                 </div>
+                                 <div class="col-2">84-76</div>
+                                 <div class="col-4">
+                                    Buducnost VOLI<img
+                                       src="Pictures/budu.png"
+                                       class="scolo"
+                                       alt="buducnost"
+                                       />
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!--Latest-->
+               <div class="latest-card" >
+                  <ul class="list-group list-group-flush">
+                     <li class="list-group-item">
+                        <a href="news.html" style=" color: white;">Playoff Picture: Pels move closer to No. 4 ...</a
+                           >
+                     </li>
+                     </li>
+                     <li class="list-group-item" >
+                        <a href="news.html"
+                           style=" color: white;">Hayes-Davis sets scoring record as Fenerbahce routs ALBA,...</a
+                           >
+                     </li>
+                     <li class="list-group-item">
+                        <a href="news.html"
+                           style=" color: white;">Who will go on a winning streak? Cibona or Igokea m:tel...</a
+                           >
+                     </li>
+                     <li class="list-group-item">
+                      <a href="news.html"
+                         style=" color: white;">Victor Wembanyama outduels Jalen Brunson to lead Spurs past Kni...</a
+                         >
+                   </li>
+                   <li class="list-group-item">
+                    <a href="news.html"
+                       style=" color: white;">Nunn steps up as Panathinaikos grabs 79-81 win at Virtus...</a
+                       >
+                 </li>
+                   
+                  </ul>
+               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--Latest-->
-    <div class="latest-card" >
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">
-          <a href="news.html" style=" color: white;">Playoff Picture: Pels move closer to No. 4 ...</a
-          ></li>
-        </li>
-        <li class="list-group-item" >
-          <a href="news.html"
-          style=" color: white;">Hayes-Davis sets scoring record as Fenerbahce routs ALBA,...</a
-          >
-        </li>
-        <li class="list-group-item">
-          <a href="news.html"
-          style=" color: white;">Who will go on a winning streak? Cibona or Igokea m:tel...</a
-          >
-        </li>
-      </ul>
-    </div>
-
-    <!--Player Cards-->
-    
-    <div class="weekly-container">
-      <header style="width: 44.5%; margin-left: 20px; margin-bottom: 10px;">
-        <h4 class="card-title nbavideo">
-          <i class="bi bi-trophy" style="margin-right: 10px; margin-left: 7px;"></i>MVPs of the Week
-        </h4>
-      </header>
-    <div class="player-container">
-      
-      <div class="player-card nba">
-        <div class="card-header">NBA Weekly MVP :</div>
-        <div class="card-body" style="padding-top: 0px">
-          <h5 class="card-title">LeBron James</h5>
-        </div>
-        <img
-          src="Pictures/lebron.webp"
-          class="card-img-top"
-          alt="LeBronJames"
-        />
-
-        <ul class="list-group list-group-flush">
-          <li class="stats"><strong>23.5</strong> PPG</li>
-          <li class="stats"><strong>7.5</strong> APG</li>
-          <li class="stats"><strong>10.5</strong> RPG</li>
-          <li class="stats"><strong>64.2</strong> FG%</li>
-          <li class="stats"><strong>33.8</strong> 3P%</li>
-          <li class="stats"><strong>76.9</strong> FT%</li>
-          <li class="stats"><strong>23.39</strong> PER</li>
-        </ul>
-      </div>
-
-      <div class="player-card eur">
-        <div class="card-header">Euroleague Weekly MVP :</div>
-        <div class="card-body" style="padding-top: 0px">
-          <h5 class="card-title">Mike James</h5>
-        </div>
-        <img src="Pictures/mike.png" class="card-img-top" alt="MikeJames" />
-
-        <ul class="list-group list-group-flush">
-          <li class="stats"><strong>23.5</strong> PPG</li>
-          <li class="stats"><strong>7.5</strong> APG</li>
-          <li class="stats"><strong>10.5</strong> RPG</li>
-          <li class="stats"><strong>64.2</strong> FG%</li>
-          <li class="stats"><strong>33.8</strong> 3P%</li>
-          <li class="stats"><strong>76.9</strong> FT%</li>
-          <li class="stats"><strong>23.39</strong> PER</li>
-        </ul>
-      </div>
-
-      <div class="player-card aba">
-        <div class="card-header">ABA League Weekly MVP :</div>
-        <div class="card-body" style="padding-top: 0px">
-          <h5 class="card-title">Kenan Kamenjaš</h5>
-        </div>
-        <img src="Pictures/keno.png" class="card-img-top" alt="KenanKamenjas" />
-
-        <ul class="list-group list-group-flush">
-          <li class="stats"><strong>23.5</strong> PPG</li>
-          <li class="stats"><strong>7.5</strong> APG</li>
-          <li class="stats"><strong>10.5</strong> RPG</li>
-          <li class="stats"><strong>64.2</strong> FG%</li>
-          <li class="stats"><strong>33.8</strong> 3P%</li>
-          <li class="stats"><strong>76.9</strong> FT%</li>
-          <li class="stats"><strong>23.39</strong> PER</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-    <!--Video Highlights-->
-    <div class="video-container mt-5">
-      <div class="row row-cols-1 row-cols-md-3 g-3">
-        <div class="col">
-          <header>
-            <h4 class="card-title nbavideo">
-              <i class="bi bi-play-circle" style="margin-right: 10px"></i>NBA
-              Highlights of the day | 25/03/2024
-            </h4>
-          </header>
-          <div class="card videos">
-            <div class="card-body">
-              <div class="ratio ratio-16x9">
-                <video
-                  autoplay
-                  loop
-                  muted
-                  controls
-                  playsinline
-                  class="card-video"
-                >
-                  <source src="Videos/nbaplays.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-              </div>
+         </div>
+         <div class="row">
+          <!--Video Highlights-->
+            <div class="col">
+               <!--Video Highlights-->
+               <div class="video-container mt-5">
+                  <div class="row row-cols-1 row-cols-md-3 g-3">
+                     <div class="col">
+                        <header>
+                           <h4 class="card-title nbavideo">
+                              <i class="bi bi-play-circle" style="margin-right: 10px"></i>NBA
+                              Highlights of the day | 25/03/2024
+                           </h4>
+                        </header>
+                        <div class="card videos">
+                           <div class="card-body">
+                              <div class="ratio ratio-16x9">
+                                 <video
+                                    autoplay
+                                    loop
+                                    muted
+                                    controls
+                                    playsinline
+                                    class="card-video"
+                                    >
+                                    <source src="Videos/nbaplays.mp4" type="video/mp4" />
+                                    Your browser does not support the video tag.
+                                 </video>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col">
+                        <header>
+                           <h4 class="card-title nbavideo">
+                              <i class="bi bi-play-circle" style="margin-right: 10px"></i
+                                 >Euroleague Best Plays | Week 31 (2024)
+                           </h4>
+                        </header>
+                        <div class="card videos">
+                           <div class="card-body">
+                              <div class="ratio ratio-16x9">
+                                 <video
+                                    autoplay
+                                    loop
+                                    muted
+                                    controls
+                                    playsinline
+                                    class="card-video"
+                                    >
+                                    <source src="Videos/eurplays.mp4" type="video/mp4" />
+                                    Your browser does not support the video tag.
+                                 </video>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col">
+                        <header>
+                           <h4 class="card-title nbavideo">
+                              <i class="bi bi-play-circle" style="margin-right: 10px"></i>ABA
+                              League Best Plays | Week 24 (2024)
+                           </h4>
+                        </header>
+                        <div class="card videos">
+                           <div class="card-body">
+                              <div class="ratio ratio-16x9">
+                                 <video
+                                    autoplay
+                                    loop
+                                    muted
+                                    controls
+                                    playsinline
+                                    class="card-video"
+                                    >
+                                    <source src="Videos/abaplays.mp4" type="video/mp4" />
+                                    Your browser does not support the video tag.
+                                 </video>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <header>
-            <h4 class="card-title nbavideo">
-              <i class="bi bi-play-circle" style="margin-right: 10px"></i
-              >Euroleague Best Plays | Week 31 (2024)
-            </h4>
-          </header>
-          <div class="card videos">
-            <div class="card-body">
-              <div class="ratio ratio-16x9">
-                <video
-                  autoplay
-                  loop
-                  muted
-                  controls
-                  playsinline
-                  class="card-video"
-                >
-                  <source src="Videos/eurplays.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-              </div>
+         </div>
+         <div class="row">
+          <!--Footer-->
+            <div class="col">
+               <!--Footer-->
+               <footer>
+                  <div class="footer-container">
+                     <div class="row">
+                        <div class="col-md-6">
+                           <h5>ATB - All Things Basketball.</h5>
+                           <p style="margin-right: 20%">
+                              ATB - All Things Basketball is your ultimate destination for
+                              everything basketball. From the latest NBA, Euroleague, ABA League
+                              and other scores and highlights to in-depth player stats and
+                              analysis, we've got you covered. Stay updated with the latest
+                              basketball news, watch thrilling game highlights, and dive into
+                              the world of basketball with ATB.
+                           </p>
+                        </div>
+                        <div class="col-md-3">
+                           <h5>Quick Links</h5>
+                           <ul class="list-unstyled">
+                              <li><a href="#" class="footer-link">Home</a></li>
+                              <li><a href="#" class="footer-link">About</a></li>
+                              <li><a href="#" class="footer-link">Services</a></li>
+                              <li><a href="#" class="footer-link">Contact</a></li>
+                           </ul>
+                        </div>
+                        <div class="col-md-3">
+                           <h5>Follow Us</h5>
+                           <ul class="footer-social-icons">
+                              <li>
+                                 <a href="#" class="footer-link"
+                                    ><i class="bi bi-facebook"></i
+                                    ></a>
+                              </li>
+                              <li>
+                                 <a href="#" class="footer-link"
+                                    ><i class="bi bi-twitter"></i
+                                    ></a>
+                              </li>
+                              <li>
+                                 <a href="#" class="footer-link"
+                                    ><i class="bi bi-instagram"></i
+                                    ></a>
+                              </li>
+                              <li>
+                                 <a href="#" class="footer-link"
+                                    ><i class="bi bi-linkedin"></i
+                                    ></a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </footer>
             </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <header>
-            <h4 class="card-title nbavideo">
-              <i class="bi bi-play-circle" style="margin-right: 10px"></i>ABA
-              League Best Plays | Week 24 (2024)
-            </h4>
-          </header>
-          <div class="card videos">
-            <div class="card-body">
-              <div class="ratio ratio-16x9">
-                <video
-                  autoplay
-                  loop
-                  muted
-                  controls
-                  playsinline
-                  class="card-video"
-                >
-                  <source src="Videos/abaplays.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-              </div>
+         </div>
+      </div>
+      <!--Modal-->
+      <div class="modal" id="exampleModal" tabindex="-1">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title">Cookies Notice</h5>
+                  <button
+                     type="button"
+                     class="btn-close"
+                     data-bs-dismiss="modal"
+                     aria-label="Close"
+                     ></button>
+               </div>
+               <div class="modal-body">
+                  🍪 We use cookies to personalize content and ads, to provide social
+                  media features, and to analyze our traffic. We also share
+                  information about your use of our site with our social media,
+                  advertising, and analytics partners. By continuing to use this
+                  website, you consent to our use of cookies as described in our
+                  <a href="#">Cookie Policy</a>.
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" id="option1">
+                  Accept All
+                  </button>
+                  <button type="button" class="btn btn-secondary" id="option2">
+                  Decline
+                  </button>
+               </div>
             </div>
-          </div>
-        </div>
+         </div>
       </div>
-    </div>
-
-    <!--Modal-->
-    <div class="modal" id="exampleModal" tabindex="-1">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Cookies Notice</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            🍪 We use cookies to personalize content and ads, to provide social
-            media features, and to analyze our traffic. We also share
-            information about your use of our site with our social media,
-            advertising, and analytics partners. By continuing to use this
-            website, you consent to our use of cookies as described in our
-            <a href="#">Cookie Policy</a>.
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary" id="option1">
-              Accept All
-            </button>
-            <button type="button" class="btn btn-secondary" id="option2">
-              Decline
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--Footer-->
-    <footer>
-      <div class="footer-container">
-        <div class="row">
-          <div class="col-md-6">
-            <h5>ATB - All Things Basketball.</h5>
-            <p style="margin-right: 20%">
-              ATB - All Things Basketball is your ultimate destination for
-              everything basketball. From the latest NBA, Euroleague, ABA League
-              and other scores and highlights to in-depth player stats and
-              analysis, we've got you covered. Stay updated with the latest
-              basketball news, watch thrilling game highlights, and dive into
-              the world of basketball with ATB.
-            </p>
-          </div>
-          <div class="col-md-3">
-            <h5>Quick Links</h5>
-            <ul class="list-unstyled">
-              <li><a href="#" class="footer-link">Home</a></li>
-              <li><a href="#" class="footer-link">About</a></li>
-              <li><a href="#" class="footer-link">Services</a></li>
-              <li><a href="#" class="footer-link">Contact</a></li>
-            </ul>
-          </div>
-          <div class="col-md-3">
-            <h5>Follow Us</h5>
-            <ul class="footer-social-icons">
-              <li>
-                <a href="#" class="footer-link"
-                  ><i class="bi bi-facebook"></i
-                ></a>
-              </li>
-              <li>
-                <a href="#" class="footer-link"
-                  ><i class="bi bi-twitter"></i
-                ></a>
-              </li>
-              <li>
-                <a href="#" class="footer-link"
-                  ><i class="bi bi-instagram"></i
-                ></a>
-              </li>
-              <li>
-                <a href="#" class="footer-link"
-                  ><i class="bi bi-linkedin"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->
-
-    <script src="script.js"></script>
-  </body>
+      <!-- Optional JavaScript; choose one of the two! -->
+      <!-- Option 1: Bootstrap Bundle with Popper -->
+      <script
+         src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+         crossorigin="anonymous"
+         ></script>
+      <!-- Option 2: Separate Popper and Bootstrap JS -->
+      <!--
+         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+         -->
+      <script src="script.js"></script>
+   </body>
 </html>
