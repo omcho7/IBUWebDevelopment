@@ -1,3 +1,4 @@
+/*Imported some google fonts*/
 @import url(https://fonts.googleapis.com/css?family=Afacad);
 @import url(https://fonts.googleapis.com/css2?family=Poppins);
 @import url(https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap);
@@ -66,9 +67,9 @@
 }
 
 body {
-  /*background-color: rgb(12, 15, 17);*/
   font-family: Poppins;
   font-size: small;
+  /*Gradient for body background*/
   background: rgb(47, 69, 94);
   background: -moz-radial-gradient(
     circle,
@@ -106,6 +107,7 @@ body {
   border: 1pt solid rgba(99, 138, 173, 0.444);
 }
 
+/*Css for Logos inside scoreboard*/
 .scolo {
   width: 10%;
   margin-right: 5%;
@@ -123,6 +125,7 @@ body {
   overflow: hidden;
 }
 
+/*First row in scoreboard; Date, Home team, Score, Away team*/
 .row.first {
   padding-bottom: 2%;
   margin-bottom: 2%;
@@ -188,6 +191,7 @@ header {
   padding-bottom: 0%;
 }
 
+/*Illustrative background for card headers (created by me :) )*/
 header::before {
   content: "";
   position: absolute;
@@ -195,10 +199,10 @@ header::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("Pictures/bg.png"); /* Set the background image */
+  background-image: url("Pictures/bg.png");
   background-size: cover;
   background-position: center;
-  opacity: 0.3; /* Set the opacity for the background image */
+  opacity: 0.3;
   z-index: -1;
 }
 
@@ -225,6 +229,7 @@ header::before {
   border-bottom: 5pt solid rgb(99, 139, 173);
 }
 
+/*Team background for nba weekly mvp card*/
 .player-card.nba::before {
   content: "";
   position: absolute;
@@ -235,10 +240,11 @@ header::before {
   background-image: url("Pictures/lakers.png");
   background-size: 180%;
   background-repeat: no-repeat;
-  opacity: 0.3; /* Adjust opacity as needed */
-  z-index: -1; /* Place behind other content */
+  opacity: 0.3;
+  z-index: -1;
 }
 
+/*Team background for euroleague weekly mvp card*/
 .player-card.eur::before {
   content: "";
   position: absolute;
@@ -249,10 +255,11 @@ header::before {
   background-image: url("Pictures/monaco.png");
   background-size: 150%;
   background-repeat: no-repeat;
-  opacity: 0.3; /* Adjust opacity as needed */
-  z-index: -1; /* Place behind other content */
+  opacity: 0.3;
+  z-index: -1;
 }
 
+/*Team background for aba league weekly mvp card*/
 .player-card.aba::before {
   content: "";
   position: absolute;
@@ -263,8 +270,8 @@ header::before {
   background-image: url("Pictures/budu.png");
   background-size: 150%;
   background-repeat: no-repeat;
-  opacity: 0.3; /* Adjust opacity as needed */
-  z-index: -1; /* Place behind other content */
+  opacity: 0.3;
+  z-index: -1;
 }
 
 .card-title {
@@ -299,12 +306,12 @@ strong {
 
 .player-container {
   display: flex;
-  justify-content: space-between; /* Adjust as needed */
+  justify-content: space-between;
 }
 
 .player-card {
   flex: 1;
-  margin-right: 10px; /* Adjust the margin between cards */
+  margin-right: 10px;
 }
 
 ul {
@@ -338,15 +345,17 @@ footer {
   width: 100%;
 }
 
+/*Footer links default variant*/
 .footer-link {
   color: rgb(103, 141, 174);
-  -webkit-transition: .4s ease-out;
+  -webkit-transition: 0.4s ease-out;
 }
 
+/*Footer links while hovering over them*/
 .footer-link:hover {
   text-decoration: none;
   color: white;
-  -webkit-transition: .2s ease-in;
+  -webkit-transition: 0.2s ease-in;
 }
 
 .footer-social-icons {
@@ -359,21 +368,21 @@ footer {
   margin-right: 10px;
 }
 
+/*Footer socials default variant*/
 .footer-social-icons li a {
   color: rgb(103, 141, 174);
   font-size: 20px;
-  -webkit-transition: .3s ease-out;
+  -webkit-transition: 0.3s ease-out;
 }
 
+/*Footer socials while hovering over them*/
 .footer-social-icons li a:hover {
   color: #f8f9fa;
   text-decoration: none;
-  -webkit-transition: .1s ease-in;
-  
+  -webkit-transition: 0.1s ease-in;
 }
 
 /* Sponsor Banner logo done using SASS */
-
 .custom-container {
   position: relative;
   width: 676.6px;
@@ -438,10 +447,10 @@ footer {
   width: 100%;
   padding: 4%;
   font-size: 14pt;
-  -webkit-transition: .3s ease-out;
+  -webkit-transition: 0.3s ease-out;
 }
 
 .subbutton:hover {
   color: white;
-  -webkit-transition: .1s ease-in;
+  -webkit-transition: 0.1s ease-in;
 }
