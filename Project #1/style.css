@@ -454,3 +454,28 @@ footer {
   color: white;
   -webkit-transition: 0.1s ease-in;
 }
+
+
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 18px;
+  padding-right: 18px;
+  transform: scale(150%);
+  border-radius: 50%;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #0056b3;
+}
+
