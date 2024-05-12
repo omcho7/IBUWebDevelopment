@@ -479,3 +479,16 @@ footer {
   background-color: #0056b3;
 }
 
+body {
+  transition: background-color 0.5s ease;
+}
+
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+.light-mode {
+  background-color: #fff;
+  color: #333;
+}
