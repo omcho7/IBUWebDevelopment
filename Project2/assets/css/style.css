@@ -1,0 +1,49 @@
+
+#footerlist{
+    list-style-type: none;
+    padding: 0%;
+}
+
+#footer1{
+    margin-left: 0%;
+    margin-right: 0%;
+    max-width: 100%;
+    position: sticky;
+    bottom: 0;
+
+}
+
+
+
+body.light-theme {
+    --primary-color: #fff ;
+    --secondary-color: #000 ;
+}
+
+body.dark-theme {
+    --primary-color: #232323 ;
+    --secondary-color: #fff ;
+}
+
+
+body {
+    background-color: var(--primary-color) !important;
+    color: var(--secondary-color) !important;
+}
+
+@media screen and (max-width: 1000px) {
+	body > section {
+		padding: 30px 20px;
+	}
+}
+@media screen and (max-width: 600px) {
+	main {
+		float: none;
+		width: 100%;
+	}
+	aside {
+		float: none;
+		width: 100%;
+	}
+
+}

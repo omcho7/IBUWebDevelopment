@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "name": "Pasta Carbonara",
+        "ingredients": ["pasta", "eggs", "bacon", "parmesan cheese"],
+        "instructions": "Cook pasta. Fry bacon. Mix eggs and cheese. Combine all."
+    },
+    {
+        "id": 2,
+        "name": "Chicken Stir-Fry",
+        "ingredients": ["chicken breast", "vegetables", "soy sauce", "rice"],
+        "instructions": "Cook chicken. Add vegetables. Stir in soy sauce. Serve over rice."
+    }
+]
