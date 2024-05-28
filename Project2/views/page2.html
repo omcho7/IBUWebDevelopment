@@ -1,5 +1,84 @@
 <div class="container">
-    <h1>PAGE 2</h1>
-    
+    <div class="row">
+        <div class="col-md-6">
+            <h1 id="greeting-message" class="mt-4"></h1>
+            <h1>Your recipes, your way.</h1>
+            <h4>Save, edit and use your recipes with our free website.</h4>
+            
+                <button type="button" class="btn btn-primary" onclick="window.location.hash = '#page3'">Get Started</button>
+           
+            
+
+        </div>
+        <div class="col-md-6">
+            
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+            alt="food" style="width: 30rem; border-radius: 20pt;">
+            
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            
+            <div class="gallery">
+                <div class="gallery-item">
+                  <img src="https://images.unsplash.com/photo-1644921504851-b8861be402ac?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                   alt="Image 1" onclick="openModal('https://images.unsplash.com/photo-1644921504851-b8861be402ac?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', 'Image 1', 'Description of Image 1')">
+                </div>
+                <div class="gallery-item">
+                  <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                   alt="Image 2" onclick="openModal('https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', 'Image 2', 'Description of Image 2')">
+                </div>
+                <div class="gallery-item">
+                  <img src="https://images.unsplash.com/photo-1514424350208-755887f7b374?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                   alt="Image 3" onclick="openModal('https://images.unsplash.com/photo-1514424350208-755887f7b374?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', 'Image 3', 'Description of Image 3')">
+                </div>
+              </div>
+              
+              <div id="modal" class="modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+                  <img id="modal-img">
+                  <h2 id="modal-title"></h2>
+                  <p id="modal-text"></p>
+                </div>
+              </div>
+              
+        </div>
+    </div>
 
 </div>
+
+<script>
+
+$(document).ready(function() {
+        // Display greeting message
+        const userName = sessionStorage.getItem('userName');
+        if (userName) {
+            $('#greeting-message').text(`Welcome, ${userName}!`);
+        }
+    });
+
+function openModal(imageSrc, title, text) {
+  document.getElementById('modal-img').src = imageSrc;
+  document.getElementById('modal-title').innerText = title;
+  document.getElementById('modal-text').innerText = text;
+  document.getElementById('modal').style.display = 'block';
+}
+
+function closeModal() {
+  document.getElementById('modal').style.display = 'none';
+}
+
+// Close modal when clicking outside of the image
+window.onclick = function(event) {
+  var modal = document.getElementById('modal');
+  if (event.target == modal) {
+    closeModal();
+  }
+}
+
+
+</script>
+
+

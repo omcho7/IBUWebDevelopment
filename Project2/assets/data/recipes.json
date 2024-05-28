@@ -10,5 +10,17 @@
         "name": "Chicken Stir-Fry",
         "ingredients": ["chicken breast", "vegetables", "soy sauce", "rice"],
         "instructions": "Cook chicken. Add vegetables. Stir in soy sauce. Serve over rice."
-    }
+    },
+    {
+        "id": 3,
+        "name": "Vegetable Curry",
+        "ingredients": ["potatoes", "carrots", "peas", "coconut milk", "curry powder"],
+        "instructions": "Cook potatoes and carrots. Add peas, coconut milk, and curry powder. Simmer until thickened."
+    },
+    {
+        "id": 4,
+        "name": "Beef Tacos",
+        "ingredients": ["ground beef", "taco seasoning", "tortillas", "lettuce", "cheese", "salsa"],
+        "instructions": "Cook beef with taco seasoning. Serve in tortillas with lettuce, cheese, and salsa."}
+    
 ]

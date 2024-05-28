@@ -1,6 +1,68 @@
 <div class="container">
-    <h1>PAGE 1</h1>
-    
+    <h2 class="mt-4">Sign Up</h2>
+        <form id="signup-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" class="form-control" id="password" name="password" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Sign Up</button>
+        </form>
 </div>
 
+<script>
+    $(document).ready(function() {
+    if ($.fn.validate) { // Check if the plugin is loaded
+        $('#signup-form').validate({
+            rules: {
+                name: {
+                    required: true
+                },
+                email: {
+                    required: true,
+                    email: true
+                },
+                password: {
+                    required: true,
+                    minlength: 6
+                }
+            },
+            messages: {
+                name: {
+                    required: "Please enter your name"
+                },
+                email: {
+                    required: "Please enter your email",
+                    email: "Please enter a valid email address"
+                },
+                password: {
+                    required: "Please enter your password",
+                    minlength: "Your password must be at least 6 characters long"
+                }
+            },
+            submitHandler: function(form, event) {
+                event.preventDefault(); // Prevent the default form submission
+                const name = $('#name').val();
+                const email = $('#email').val();
+                const password = $('#password').val();
 
+                // Store user data in sessionStorage
+                sessionStorage.setItem('userName', name);
+
+                // Redirect to page1.html
+                window.location.hash = '#page2';
+            }
+        });
+    } else {
+        console.error("jQuery Validation plugin is not loaded.");
+    }
+});
+
+</script>
