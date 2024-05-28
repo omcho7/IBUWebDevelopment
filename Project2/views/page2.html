@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-md-6">
             <h1 id="greeting-message" class="mt-4"></h1>
-            <h1>Your recipes, your way.</h1>
+            <h1>Enjoy your recipes, your way.</h1>
             <h4>Save, edit and use your recipes with our free website.</h4>
             
                 <button type="button" class="btn btn-primary" onclick="window.location.hash = '#page3'">Get Started</button>
@@ -19,8 +19,10 @@
     </div>
     <div class="row">
         <div class="col-md-6">
+
+            <button type="button" class="btn btn-primary" id="toggle-gallery">Toggle Gallery</button>
             
-            <div class="gallery">
+            <div class="gallery" id="gallery1">
                 <div class="gallery-item">
                   <img src="https://images.unsplash.com/photo-1644921504851-b8861be402ac?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                    alt="Image 1" onclick="openModal('https://images.unsplash.com/photo-1644921504851-b8861be402ac?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', 'Image 1', 'Description of Image 1')">
@@ -46,6 +48,11 @@
               
         </div>
     </div>
+    <div class="row">
+        <div class="col-md-6">
+            <a href="#page4">Interested about the site? View more here</a>
+        </div>
+    </div>
 
 </div>
 
@@ -57,6 +64,11 @@ $(document).ready(function() {
         if (userName) {
             $('#greeting-message').text(`Welcome, ${userName}!`);
         }
+
+        $('#toggle-gallery').click(function() {
+            $('.gallery').toggle();
+        });
+
     });
 
 function openModal(imageSrc, title, text) {

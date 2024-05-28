@@ -13,6 +13,10 @@
 
 }
 
+#gallery1 {
+    display: none;
+}
+
 button{
     background-color: #00d061 !important;
     color: white;
@@ -33,7 +37,7 @@ button{
 }
 
 
-a {
+#navigation {
     background-color: var(--primary-color) !important;
     color: var(--secondary-color) !important;
 }
