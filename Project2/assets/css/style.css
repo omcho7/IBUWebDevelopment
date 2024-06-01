@@ -4,7 +4,8 @@
 }
 
 #footer1 {
-  background-color: #738a7e59;
+  background-color: #44574df0;
+  color: white;
   padding-top: 20pt;
   margin-left: 0%;
   margin-right: 0%;
@@ -55,7 +56,7 @@
 }
 
 #start {
-  margin-top: 5%;
+  margin-top: 10%;
   margin-bottom: 10%;
   background-color: #738a7e59;
   border-radius: 20pt;

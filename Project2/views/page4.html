@@ -1,58 +1,127 @@
 <div class="container">
-    <h1>About Recipe Manager</h1>
-    <div class="row">
-        <div class="col-md-6">
-            <h4>FAQ</h4>
-            <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      Accordion Item #1
-                    </button>
-                  </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      Accordion Item #2
-                    </button>
-                  </h2>
-                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      Accordion Item #3
-                    </button>
-                  </h2>
-                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                    </div>
-                  </div>
-                </div>
-              </div>
+  <h1 style="margin: 2%">About Recipe Manager</h1>
+  <div class="row">
+    <div class="col-md-12" style="margin-top: 2%; margin-bottom: 10%">
+      <h2 style="text-align: center; margin-bottom: 2%; font-weight: bold">
+        FAQ
+      </h2>
+      <div class="accordion" id="accordionExample">
+        <div
+          class="accordion-item"
+          style="border-top-left-radius: 20pt; border-top-right-radius: 20pt"
+        >
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button"
+              style="
+                border-top-left-radius: 20pt;
+                border-top-right-radius: 20pt;
+                color: white;
+                font-size: 15pt;
+                font-weight: bold;
+              "
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              How can I add a new recipe to the Recipe Manager app?
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              Navigate to the "Recipes" section of the app. Click on the "Add
+              New Recipe" button. Fill in the required details, such as the
+              recipe name, ingredients, instructions, and any additional notes.
+              Optionally, you can upload a photo of the dish. Once you have
+              entered all the necessary information, click the "Save Recipe"
+              button. Your new recipe will now be added to your collection and
+              can be accessed anytime.
+            </div>
+          </div>
         </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              style="color: white; font-size: 15pt; font-weight: bold"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              How do I edit or delete a recipe in the Recipe Manager app
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              Navigate to the "Recipes" section of the app. Locate the recipe
+              you want to edit or delete. Click on the recipe to open its
+              detailed view. To edit the recipe, click on the "Edit Recipe"
+              button. Make the necessary changes and click "Save" to update the
+              recipe. To delete the recipe, click on the "Delete Recipe" button.
+              Confirm the deletion when prompted. The recipe will be updated or
+              removed from your collection accordingly.
+            </div>
+          </div>
+        </div>
+        <div
+          class="accordion-item"
+          style="
+            border-bottom-left-radius: 20pt;
+            border-bottom-right-radius: 20pt;
+          "
+        >
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              style="
+                border-bottom-left-radius: 20pt;
+                border-bottom-right-radius: 20pt;
+                color: white;
+                font-size: 15pt;
+                font-weight: bold;
+              "
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              How do I switch between light and dark themes?
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              To switch between light and dark themes in the Recipe Manager app,
+              follow these steps: Locate the theme switcher button, which is
+              usually found in the app's navigation bar or settings menu. Click
+              on the theme switcher button. The icon may change to indicate the
+              current theme (e.g., a sun icon for light theme and a moon icon
+              for dark theme). The app will instantly switch to the selected
+              theme, providing a more comfortable viewing experience based on
+              your preference. You can toggle between the light and dark themes
+              as needed to suit your environment and reduce eye strain.
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </div>
 
-
-
-
-
-
-<script>
-
-
-
-</script>
-
+<script></script>
