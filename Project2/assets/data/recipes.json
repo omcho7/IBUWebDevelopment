@@ -1,26 +1,43 @@
 [
-    {
-        "id": 1,
-        "name": "Pasta Carbonara",
-        "ingredients": ["pasta", "eggs", "bacon", "parmesan cheese"],
-        "instructions": "Cook pasta. Fry bacon. Mix eggs and cheese. Combine all."
-    },
-    {
-        "id": 2,
-        "name": "Chicken Stir-Fry",
-        "ingredients": ["chicken breast", "vegetables", "soy sauce", "rice"],
-        "instructions": "Cook chicken. Add vegetables. Stir in soy sauce. Serve over rice."
-    },
-    {
-        "id": 3,
-        "name": "Vegetable Curry",
-        "ingredients": ["potatoes", "carrots", "peas", "coconut milk", "curry powder"],
-        "instructions": "Cook potatoes and carrots. Add peas, coconut milk, and curry powder. Simmer until thickened."
-    },
-    {
-        "id": 4,
-        "name": "Beef Tacos",
-        "ingredients": ["ground beef", "taco seasoning", "tortillas", "lettuce", "cheese", "salsa"],
-        "instructions": "Cook beef with taco seasoning. Serve in tortillas with lettuce, cheese, and salsa."}
-    
+  {
+    "id": 1,
+    "image": "https://images.unsplash.com/photo-1588013273468-315fd88ea34c?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "name": "Pasta Carbonara",
+    "ingredients": ["pasta", "eggs", "bacon", "parmesan cheese"],
+    "instructions": "Cook pasta. Fry bacon. Mix eggs and cheese. Combine all."
+  },
+  {
+    "id": 2,
+    "image": "https://images.unsplash.com/photo-1669863329825-6e4e39ce752c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "name": "Chicken Stir-Fry",
+    "ingredients": ["chicken breast", "vegetables", "soy sauce", "rice"],
+    "instructions": "Cook chicken. Add vegetables. Stir in soy sauce. Serve over rice."
+  },
+  {
+    "id": 3,
+    "image": "https://images.unsplash.com/photo-1519624213695-6819a985fb0b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "name": "Vegetable Curry",
+    "ingredients": [
+      "potatoes",
+      "carrots",
+      "peas",
+      "coconut milk",
+      "curry powder"
+    ],
+    "instructions": "Cook potatoes and carrots. Add peas, coconut milk, and curry powder. Simmer until thickened."
+  },
+  {
+    "id": 4,
+    "image": "https://images.unsplash.com/photo-1640983743761-4f0e0204bc58?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "name": "Beef Tacos",
+    "ingredients": [
+      "ground beef",
+      "taco seasoning",
+      "tortillas",
+      "lettuce",
+      "cheese",
+      "salsa"
+    ],
+    "instructions": "Cook beef with taco seasoning. Serve in tortillas with lettuce, cheese, and salsa."
+  }
 ]
