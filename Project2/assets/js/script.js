@@ -1,11 +1,7 @@
-import $ from 'jquery';
+import $ from "jquery";
 var app = $.spapp({
-    defaultView: "#page1",
-    templateDir: "../views/"
+  defaultView: "#page1",
+  templateDir: "../views/",
 });
 
-
-
-  
- app.run();
-
+app.run();
