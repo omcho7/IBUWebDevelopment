@@ -27,7 +27,7 @@ button{
 
 
 #navigation.light-theme {
-    --primary-color: #fff ;
+    --primary-color: #fff3e9 ;
     --secondary-color: #000 ;
 }
 
@@ -43,7 +43,7 @@ button{
 }
 
 a.light-theme {
-    --primary-color: #fff ;
+    --primary-color: #fff3e9 ;
     --secondary-color: #000 ;
 }
 
@@ -59,7 +59,7 @@ a {
 }
 
 body.light-theme {
-    --primary-color: #fff ;
+    --primary-color: #fff3e9 ;
     --secondary-color: #000 ;
 }
 
@@ -72,6 +72,7 @@ body.dark-theme {
 body {
     background-color: var(--primary-color) !important;
     color: var(--secondary-color) !important;
+    transition: background-color 0.5s, color 0.5s;
 }
 
 
@@ -139,7 +140,6 @@ body {
   }
 
   
-
 
 
 @media screen and (max-width: 1000px) {
