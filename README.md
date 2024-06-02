@@ -30,25 +30,26 @@ Resources used to create this project:
 
 Project #2: Recipe Manager (JavaScript, jquery, AJAX)
 
-This second project was an excellent opportunity to dive deeper into web development by utilizing JavaScript for dynamic content, AJAX for seamless data interaction, and jQuery for simplified DOM manipulation. The theme of the project is a Recipe Manager. The goal was to create a robust web application that allows users to manage their favorite recipes efficiently. This project offers a comprehensive solution for food enthusiasts, providing a user-friendly interface to add, edit, and delete recipes. Each recipe card displays essential information, including ingredients, instructions, and an appetizing image. By leveraging AJAX, the application ensures smooth and asynchronous data updates without refreshing the page, enhancing the overall user experience.
+This second project was an excellent opportunity to dive deeper into web development by utilizing JavaScript for dynamic content, AJAX for seamless data interaction, and jQuery for simplified DOM manipulation.
+The theme of the project is a Recipe Manager. The goal was to create a robust web application that allows users to manage their favorite recipes efficiently. This project offers a comprehensive solution for food enthusiasts, providing a user-friendly interface to add, edit, and delete recipes. Each recipe card displays essential information, including ingredients, instructions, and an appetizing image. By leveraging AJAX, the application ensures smooth and asynchronous data updates without refreshing the page, enhancing the overall user experience.
 
 Features included in the website:
 
-    User Sign-up and form validation
-    Single Page Application (SPAPP) integration
-    Toggleable gallery with modal pop ups
-    Data driven content loading
-    Add, edit or delete functions for each of the recipes
-    FAQ section with accordion menu
-    Theme switching (light mode and dark mode)
-    Floating nav menu
+- User Sign-up and form validation
+- Single Page Application (SPAPP) integration
+- Toggleable gallery with modal pop ups
+- Data driven content loading
+- Add, edit or delete functions for each of the recipes
+- FAQ section with accordion menu
+- Theme switching (light mode and dark mode)
+- Floating nav menu
 
 Resources used to create this project:
 
-    IBU Foundations of Frontend Web Development materials
-    W3Schools: https://www.w3schools.com/
-    Bootstrap 5.3 documentation: https://getbootstrap.com/
-    Bootstrap Icons: https://icons.getbootstrap.com/
-    Various free images from Unsplash: unsplash.com
-    Stack Overflow: https://stackoverflow.com/
-    Various other internet documentation for each of the technologies and libraries
+- IBU Foundations of Frontend Web Development materials
+- W3Schools: https://www.w3schools.com/
+- Bootstrap 5.3 documentation: [https://getbootstrap.com/](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+- Bootstrap Icons: https://icons.getbootstrap.com/
+- Various free images from Unsplash: unsplash.com
+- Stack Overflow: https://stackoverflow.com/
+- Various other internet documentation for each of the technologies and libraries
