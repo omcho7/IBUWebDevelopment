@@ -29,6 +29,10 @@
       rel="stylesheet"
     />
     <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
@@ -104,7 +108,23 @@
               id="navigation"
             >
               <div class="offcanvas-header" id="navigation">
-                <h5 class="offcanvas-title">Recipe Manager</h5>
+                <div
+                  style="display: flex; justify-content: left; margin-top: 10pt"
+                >
+                  <i
+                    class="bi bi-journal-bookmark-fill"
+                    style="font-size: 20pt; margin-right: 5pt"
+                  ></i>
+                  <p
+                    style="
+                      font-size: 20pt;
+                      font-family: Roboto Slab;
+                      font-weight: 450;
+                    "
+                  >
+                    Recipe Manager
+                  </p>
+                </div>
                 <button
                   type="button"
                   class="btn-close"
@@ -112,6 +132,7 @@
                   aria-label="Close"
                 ></button>
               </div>
+
               <div class="offcanvas-body" id="navigation">
                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                   <li class="nav-item">
@@ -124,8 +145,16 @@
                     <a class="nav-link" href="#page4">About Us</a>
                   </li>
                 </ul>
-                <button id="theme-switcher">
-                  <i id="theme-icon" class="bi bi-sun"></i>
+
+                <button
+                  id="theme-switcher"
+                  style="width: 30pt; border-radius: 5pt; margin-top: 15pt"
+                >
+                  <i
+                    id="theme-icon"
+                    class="bi bi-sun"
+                    style="font-size: 20pt"
+                  ></i>
                 </button>
               </div>
             </div>

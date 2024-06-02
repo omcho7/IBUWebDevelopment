@@ -63,7 +63,7 @@
 }
 
 #start {
-  margin-top: 10%;
+  margin-top: 5%;
   margin-bottom: 10%;
   background-color: #738a7e59;
   border-radius: 20pt;
@@ -116,15 +116,24 @@ a {
 body.light-theme {
   --primary-color: #fff3e9;
   --secondary-color: #000;
+  --third-color: #d0bba9;
 }
 
 body.dark-theme {
   --primary-color: #232323;
   --secondary-color: #fff;
+  --third-color: #5f554c;
 }
 
 body {
-  background-color: var(--primary-color) !important;
+  background-color: var(--third-color);
+  opacity: 1;
+  background-image: radial-gradient(var(--third-color) 0.6px, transparent 0.6px),
+    radial-gradient(var(--third-color) 0.6px, var(--primary-color) 0.6px);
+  background-size: 24px 24px;
+  background-position: 0 0, 12px 12px;
+
+  /*background-color: var(--primary-color) !important;*/
   color: var(--secondary-color) !important;
   transition: background-color 0.5s, color 0.5s;
 }
