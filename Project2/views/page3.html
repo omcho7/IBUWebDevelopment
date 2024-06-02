@@ -180,14 +180,12 @@
     };
     console.log(newRecipe.image);
 
-    // Append new recipe to the JSON file
     $.ajax({
       url: "assets/data/recipes.json",
       method: "GET",
       dataType: "json",
       success: function (data) {
         data.push(newRecipe);
-        // Normally, you'd send the updated data to the server here
         displayRecipes(data);
         toastr.success("Recipe added successfully!");
         $("#recipeModal").modal("hide");
@@ -205,9 +203,18 @@
 
   function editRecipe(id) {
     const recipeName = prompt("Enter new recipe name:");
-    if (recipeName) {
+    const recipeIngredients = prompt(
+      "Enter new recipe ingredients (comma separated):"
+    );
+    const recipeInstructions = prompt("Enter new recipe instructions:");
+    if (recipeName && recipeIngredients && recipeInstructions) {
       // Update the UI
       $(`#recipe-${id} .card-title`).text(recipeName);
+      $(`#recipe-${id} ul`).empty();
+      recipeIngredients.split(",").forEach((ingredient) => {
+        $(`#recipe-${id} ul`).append(`<li>${ingredient}</li>`);
+      });
+      $(`#recipe-${id} .card-text`).text(`Instructions: ${recipeInstructions}`);
       toastr.success("Recipe edited successfully!");
     }
   }

@@ -23,6 +23,7 @@
 #modal-text {
   margin-top: 5%;
   text-align: center;
+  color: white;
 }
 
 .modal-title,
@@ -65,13 +66,13 @@
 #start {
   margin-top: 5%;
   margin-bottom: 10%;
-  background-color: #738a7e59;
+  background-color: #515e5759;
   border-radius: 20pt;
   padding: 30pt;
 }
 
 button {
-  background-color: #00d061 !important;
+  background-color: #44574df0 !important;
   color: white;
   border-radius: 10pt;
   border: none !important;

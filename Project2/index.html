@@ -95,9 +95,13 @@
               data-bs-target="#offcanvasNavbar"
               aria-controls="offcanvasNavbar"
               aria-label="Toggle navigation"
-              style="z-index: 100; margin: 1.5%"
+              style="z-index: 100; margin: 1.5%; color: white !important"
             >
-              <span class="navbar-toggler-icon"></span>
+              <i class="bi bi-list" style="font-size: 30pt"></i>
+              <!--<span
+                class="navbar-toggler-icon"
+                style="color: white !important"
+              ></span>-->
             </button>
 
             <div
@@ -223,6 +227,23 @@
     </script>
 
     <script>
+      $(document).ready(function () {
+        $(window).on("hashchange", function () {
+          if (window.location.href.endsWith("#page1")) {
+            $("#navigation").hide();
+          } else {
+            $("#navigation").show();
+          }
+        });
+
+        // Check initial hash
+        if (window.location.href.endsWith("#page1")) {
+          $("#navigation").hide();
+        } else {
+          $("#navigation").show();
+        }
+      });
+
       $(document).ready(function () {
         const themeSwitcher = $("#theme-switcher");
         const themeIcon = $("#theme-icon");
