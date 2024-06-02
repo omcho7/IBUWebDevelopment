@@ -107,12 +107,13 @@
           $(element).tooltip("dispose");
         },
         submitHandler: function (form, event) {
-          event.preventDefault(); // Prevent the default form submission
+          // Prevent the default form submission
+          event.preventDefault();
           const name = $("#name").val();
           const email = $("#email").val();
           const password = $("#password").val();
 
-          // Store user data in sessionStorage
+          // Store username in sessionStorage
           sessionStorage.setItem("userName", name);
 
           // Redirect to page2.html
