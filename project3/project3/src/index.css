@@ -13,13 +13,31 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+footer {
+  text-align: center;
+}
+/*
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #535bf2;
   text-decoration: inherit;
 }
 a:hover {
   color: #535bf2;
+}*/
+
+body::before {
+  content: "";
+  background: url("./assets/background.jpg");
+  opacity: 0.3; /* Adjust to your preference */
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  background-repeat: repeat-y;
+  background-size: cover;
 }
 
 body {

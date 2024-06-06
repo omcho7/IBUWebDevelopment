@@ -5,6 +5,28 @@
   text-align: center;
 }
 
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 1000ms;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 1000ms;
+}
+
+.footer {
+  margin-top: auto;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -16,6 +38,15 @@
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:visited {
+  color: black;
+  text-decoration: none;
 }
 
 @keyframes logo-spin {
