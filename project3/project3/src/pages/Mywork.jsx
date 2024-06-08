@@ -1,12 +1,125 @@
 import React from 'react';
-import Card from '../components/SkillCard';
 import Grid from '@mui/material/Grid';
+import WorkCard from '../components/WorkCard';
 
 function MyWork() {
   return (
     <div>
-      <h1>My work</h1>
-      
+      <h1>Graphic Design</h1>
+      <Grid container spacing={3} >
+        <Grid item xs={6} md={6}>
+          <WorkCard
+            imgSrc={"https://i.ibb.co/TqYR46M/Slide-4-3-1.png"}
+            title={"GDG Poster and Banner"}
+            description={"A poster and banner design for the Google Developer Group (GDG) event, featuring a modern and vibrant design that captures the essence of the event."}
+          />
+        </Grid>
+        <Grid item xs={6} md={6}>
+          <WorkCard
+            imgSrc={"https://i.ibb.co/Bw9ZJZc/Slide-4-3-2.png"}
+            title={"KK Bosna Gameday Poster"}
+            description={""}
+          />
+        </Grid>
+        <Grid item xs={6} md={6}>
+          <WorkCard
+            imgSrc={"https://i.ibb.co/4KX4pLq/Slide-4-3-4.png"}
+            title={"Video Game Menu Redesign"}
+            description={""}
+          />
+        </Grid>
+        <Grid item xs={6} md={6}>
+          <WorkCard
+            imgSrc={"https://i.ibb.co/vXzvCWD/Slide-4-3-3.png"}
+            title={"IBU Programming Brochure"}
+            description={""}
+          />
+        </Grid>
+        <Grid item xs={6} md={6}>
+          <WorkCard
+            imgSrc={"https://i.ibb.co/v1S1YSf/Slide-4-3-7.png"}
+            title={"SeatSaver Promo Poster"}
+            description={""}
+          />
+        </Grid>
+        <Grid item xs={6} md={6}>
+          <WorkCard
+            imgSrc={"https://i.ibb.co/1fPc0tw/Slide-4-3-8.png"}
+            title={"Construction Company Logo"}
+            description={""}
+          />
+        </Grid>
+        <Grid item xs={6} md={6}>
+          <WorkCard
+            imgSrc={"https://i.ibb.co/m0z8rpZ/Slide-4-3-9.png"}
+            title={"HealthMate Promo Logo"}
+            description={""}
+          />
+        </Grid>
+        <Grid item xs={6} md={6}>
+          <WorkCard
+            imgSrc={"https://i.ibb.co/TP1tsZw/Slide-4-3-10.png"}
+            title={"IdeaLab Logo"}
+            description={""}
+          />
+        </Grid>
+      </Grid>
+      <h1>UX/UI</h1>
+      <Grid container spacing={3}>
+        <Grid item xs={6} md={6}>
+          <WorkCard
+            imgSrc={"https://i.ibb.co/vPt4Gm3/Slide-4-3-11.png"}
+            title={"Dono Mobile Application"}
+            description={""}
+          />
+        </Grid>
+        <Grid item xs={6} md={6}>
+          <WorkCard
+            imgSrc={"https://i.ibb.co/pnbXhF8/Slide-4-3-6.png"}
+            title={"Traverse Transport Ticket Website"}
+            description={""}
+          />
+        </Grid>
+        <Grid item xs={6} md={6}>
+          <WorkCard
+            imgSrc={"https://i.ibb.co/HHwhTRZ/Slide-4-3-5.png"}
+            title={"HealthMate Mobile Application"}
+            description={""}
+          />
+        </Grid>
+        <Grid item xs={6} md={6}>
+          <WorkCard
+            imgSrc={"https://i.ibb.co/0YRQ4cV/Slide-4-3-13.png"}
+            title={"Fauxica Online Store Website"}
+            description={""}
+          />
+        </Grid>
+        <Grid item xs={12} md={12}>
+          <WorkCard
+            imgSrc={"https://i.ibb.co/Wvj2mBq/Slide-4-3-12.png"}
+            title={"Handyman Repair Kit Mobile Application"}
+            description={""}
+          />
+        </Grid>
+
+        
+      </Grid>
+      <h1>Web Development</h1>
+      <Grid container spacing={3}>
+        <Grid item xs={6} md={4}>
+          <WorkCard
+            
+          />
+        </Grid>
+      </Grid>
+      <h1>Illustrations</h1>
+      <Grid container spacing={3}>
+        <Grid item xs={6} md={4}>
+          <WorkCard
+
+          />
+        </Grid>
+      </Grid>
     </div>
   );
 }

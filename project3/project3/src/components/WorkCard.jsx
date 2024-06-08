@@ -1,14 +1,14 @@
 import React from 'react';
 import { Card, CardContent, Typography } from '@mui/material';
 
-const MyCard = ({ icon, title, description }) => (
-  <Card className="skillcard" sx={{ maxWidth: 345, minHeight: 280 }}>
+const MyCard = ({ imgSrc, title, description }) => (
+  <Card className="workcard" sx={{ maxWidth: 445, minHeight: 380 }}>
     <CardContent>
-      {icon}
+      <img src={imgSrc} alt={title} style={{ width: '100%', height: 'auto', borderRadius: '10pt' }}/>
       <Typography gutterBottom variant="h5" component="div">
         {title}
       </Typography>
-      <Typography variant="body2" color="text.secondary">
+      <Typography variant="body2">
         {description}
       </Typography>
     </CardContent>

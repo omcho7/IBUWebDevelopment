@@ -28,7 +28,7 @@ function Homepage() {
           alignItems="center"
         >
           <Box maxWidth={500} style={{ marginTop: "10%" }}>
-            <h2 style={{ textAlign: "center" }}>Welcome, my name is Omar.</h2>
+            <h2 style={{ textAlign: "center" }}>Welcome, I'm Omar.</h2>
             <p style={{ textAlign: "center", marginBottom: "120pt" }}>
               I have a passion for art and design, specializing in graphic
               design, UX/UI design, web development, and illustration. Whether
