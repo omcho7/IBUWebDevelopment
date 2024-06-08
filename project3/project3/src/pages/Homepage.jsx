@@ -1,22 +1,25 @@
 import * as React from "react";
 import Grid from "@mui/material/Grid";
-import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import DesignServicesIcon from "@mui/icons-material/DesignServices";
 import ArchitectureIcon from "@mui/icons-material/Architecture";
 import IntegrationInstructionsIcon from "@mui/icons-material/IntegrationInstructions";
 import BrushIcon from "@mui/icons-material/Brush";
+import { useRef } from 'react';
+import ScrollArrow from "../components/ScrollArrow";
+import SkillCard from "../components/SkillCard";
 
 function Homepage() {
+
+  const myRef = useRef(null);
+  
   return (
+    
     <div>
-      <Grid container spacing={3}>
+      
+      <Grid container spacing={3} >
         <Grid
+        
           item
           xs={12}
           justifyContent={"center"}
@@ -24,9 +27,9 @@ function Homepage() {
           flexDirection="column"
           alignItems="center"
         >
-          <Box maxWidth={500}>
+          <Box maxWidth={500} style={{ marginTop: "10%" }}>
             <h2 style={{ textAlign: "center" }}>Welcome, my name is Omar.</h2>
-            <p style={{ textAlign: "center" }}>
+            <p style={{ textAlign: "center", marginBottom: "120pt" }}>
               I have a passion for art and design, specializing in graphic
               design, UX/UI design, web development, and illustration. Whether
               I'm crafting captivating user experiences or diving into the world
@@ -37,72 +40,51 @@ function Homepage() {
             </p>
           </Box>
         </Grid>
-        <Grid item xs={6} md={3}>
-          <Card sx={{ maxWidth: 345, minHeight: 280 }}>
-            <CardContent>
-              <DesignServicesIcon sx={{ fontSize: 100 }} />
-              <Typography gutterBottom variant="h5" component="div">
-                Graphic Design
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                I excel in graphic design, using tools like Photoshop, Figma,
-                and Canva to create visually stunning, professional, and
-                effective designs that communicate messages clearly.
-              </Typography>
-            </CardContent>
-          </Card>
+
+        
+        <Grid ref={myRef} item xs={6} md={3} style={{ marginTop: "40%" }} >
+          <SkillCard
+            icon={<DesignServicesIcon sx={{ fontSize: 100 }} />}
+            title="Graphic Design"
+            description="I excel in graphic design, using tools like Photoshop, Figma, and Canva to create visually stunning, professional, and effective designs that communicate messages clearly."
+          />
         </Grid>
 
-        <Grid item xs={6} md={3}>
-          <Card sx={{ maxWidth: 345, minHeight: 280 }}>
-            <CardContent>
-              <ArchitectureIcon sx={{ fontSize: 100 }} />
-              <Typography gutterBottom variant="h5" component="div">
-                UX/UI Design
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                I excel in UX/UI design, crafting intuitive and visually
-                appealing user experiences that seamlessly blend functionality
-                and aesthetics using tools like Figma and Adobe XD.
-              </Typography>
-            </CardContent>
-          </Card>
+        <Grid item xs={6} md={3} style={{ marginTop: "40%" }}>
+          <SkillCard
+          icon={<ArchitectureIcon sx={{ fontSize: 100 }} />}
+          title="UX/UI Design"
+          description="I excel in UX/UI design, crafting intuitive and visually appealing user experiences that seamlessly blend functionality and aesthetics using tools like Figma and Adobe XD."
+          />
+          
         </Grid>
 
-        <Grid item xs={6} md={3}>
-          <Card sx={{ maxWidth: 345, minHeight: 280 }}>
-            <CardContent>
-              <IntegrationInstructionsIcon sx={{ fontSize: 100 }} />
-              <Typography gutterBottom variant="h5" component="div">
-                Web Development
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                I excel in web development, building responsive, user-friendly
-                websites that combine functionality and design using HTML, CSS,
-                JavaScript, React, Jquery, AJAX and more.
-              </Typography>
-            </CardContent>
-          </Card>
+        <Grid item xs={6} md={3} style={{ marginTop: "40%" }}>
+          <SkillCard
+            icon={<IntegrationInstructionsIcon sx={{ fontSize: 100 }} />}
+            title="Web Development"
+            description="I excel in web development, building responsive, user-friendly websites that combine functionality and design using HTML, CSS, JavaScript, React, Jquery, AJAX and more."
+          />
+         
         </Grid>
 
-        <Grid item xs={6} md={3}>
-          <Card sx={{ maxWidth: 345, minHeight: 280 }}>
-            <CardContent>
-              <BrushIcon sx={{ fontSize: 100 }} />
-              <Typography gutterBottom variant="h5" component="div">
-                Illustration
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                I excel in illustration, creating detailed and expressive
-                artwork that brings ideas to life using both traditional and
-                digital mediums (Adobe Photoshop, Procreate, Krita, etc.).
-              </Typography>
-            </CardContent>
-          </Card>
+        <Grid item xs={6} md={3} style={{ marginTop: "40%" }}>
+          <SkillCard
+            icon={<BrushIcon sx={{ fontSize: 100 }} />}
+            title="Illustration"
+            description="I excel in illustration, creating detailed and expressive artwork that brings ideas to life using both traditional and digital mediums (Adobe Photoshop, Procreate, Krita, etc.)."
+          />
         </Grid>
+
+        <ScrollArrow targetRef={myRef}></ScrollArrow>
+        
       </Grid>
     </div>
   );
 }
 
+
+
 export default Homepage;
+
+

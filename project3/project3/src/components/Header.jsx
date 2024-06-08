@@ -14,6 +14,7 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
+import BoltIcon from '@mui/icons-material/Bolt';
 
 function Header() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -38,7 +39,7 @@ function Header() {
     <AppBar position="static" sx={{ backgroundColor: "transparent" }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
+          <BoltIcon sx={{ display: { xs: "flex", md: "flex" }, mr: 5 }} />
 
           <Box
             sx={{
@@ -132,35 +133,4 @@ function Header() {
 }
 export default Header;
 
-/*import AppBar from "@mui/material/AppBar";
-import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
-import IconButton from "@mui/material/IconButton";
-import MenuIcon from "@mui/icons-material/Menu";
 
-// Your component code here
-
-function Header() {
-  return (
-    <header>
-      <h1>My Website</h1>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/mywork">My Work</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
-        </ul>
-        <hr />
-      </nav>
-    </header>
-  );
-}
-
-export default Header;*/

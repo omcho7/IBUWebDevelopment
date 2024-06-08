@@ -41,6 +41,9 @@ function App() {
             <TransitionRoutes />
           </Grid>
           <Grid item xs={12}>
+              <p style={{marginBottom: "20%"}}></p>
+          </Grid>
+          <Grid item xs={12}>
             <Footer />
           </Grid>
         </Grid>

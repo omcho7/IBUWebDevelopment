@@ -40,6 +40,70 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+.my-card {
+  
+  border-radius: 25pt !important;
+  color: rgb(32, 32, 32) !important;
+  padding: 5pt;
+  margin: 5pt;
+  
+}
+
+.scroll-arrow {
+  background-color: white;
+  border-radius: 20pt;
+  padding: 10pt;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+}
+
+.scroll-arrow span {
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  border-right: 2px solid rgb(0, 0, 0);
+  transform: rotate(45deg);
+  margin: 10px;
+  animation: scrollArrow 2s infinite;
+  opacity: 0;
+}
+
+.scroll-arrow span:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.scroll-arrow span:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.scroll-arrow span:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+@keyframes scrollArrow {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+
+link {
+  text-decoration: none;
+  /*background-color: #0c0c0caa;*/
+}
+
 a {
   text-decoration: none;
   color: black;

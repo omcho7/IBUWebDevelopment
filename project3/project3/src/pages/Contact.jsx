@@ -67,7 +67,7 @@ function Contact() {
                 onChange={(e) => setFullName(e.target.value)}
                 error={!!errors.fullName}
                 helperText={errors.fullName}
-                inputProps={{ style: { color: "white" } }}
+                inputProps={{ style: { color: "white", backgroundColor: "#0c0c0c60" } }}
               />
             </Grid>
           </Grid>
@@ -89,7 +89,7 @@ function Contact() {
                 onChange={(e) => setEmail(e.target.value)}
                 error={!!errors.email}
                 helperText={errors.email}
-                inputProps={{ style: { color: "white" } }}
+                inputProps={{ style: { color: "white", backgroundColor: "#0c0c0c60"  } }}
               />
             </Grid>
           </Grid>
@@ -103,7 +103,7 @@ function Contact() {
               <QuestionAnswerIcon sx={{ fontSize: 30 }} />
 
               <TextField
-                id="filled-multiline-static"
+                id="multiline-static"
                 label="Inquiry"
                 multiline
                 rows={4}
@@ -112,7 +112,7 @@ function Contact() {
                 onChange={(e) => setInquiry(e.target.value)}
                 error={!!errors.inquiry}
                 helperText={errors.inquiry}
-                inputProps={{ style: { color: "white" } }}
+                inputProps={{ style: { color: "white", backgroundColor: "#0c0c0c60"  } }}
               />
             </Grid>
           </Grid>
