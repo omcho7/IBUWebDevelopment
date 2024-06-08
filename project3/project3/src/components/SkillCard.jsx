@@ -1,10 +1,10 @@
-import React from 'react';
-import { Card, CardContent, Typography } from '@mui/material';
+import React from "react";
+import { Card, CardContent, Typography } from "@mui/material";
 
 const MyCard = ({ icon, title, description }) => (
   <Card className="skillcard" sx={{ maxWidth: 345, minHeight: 280 }}>
     <CardContent>
-      {icon}
+      {React.cloneElement(icon, { className: "icon" })}
       <Typography gutterBottom variant="h5" component="div">
         {title}
       </Typography>

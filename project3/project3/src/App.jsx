@@ -1,33 +1,12 @@
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  useLocation,
-} from "react-router-dom";
-import { CSSTransition, TransitionGroup } from "react-transition-group";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Homepage from "./pages/Homepage.jsx";
 import MyWork from "./pages/Mywork.jsx";
 import Contact from "./pages/Contact.jsx";
 import Grid from "@mui/material/Grid";
+import Box from "@mui/material/Box";
 import "./App.css";
-
-function TransitionRoutes() {
-  let location = useLocation();
-
-  return (
-    <TransitionGroup>
-      <CSSTransition key={location.key} timeout={300} classNames="fade">
-        <Routes location={location}>
-          <Route path="/" element={<Homepage />} />
-          <Route path="/mywork" element={<MyWork />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </CSSTransition>
-    </TransitionGroup>
-  );
-}
 
 function App() {
   return (
@@ -37,12 +16,12 @@ function App() {
           <Grid item xs={12}>
             <Header />
           </Grid>
-          <Grid item xs={12}>
-            <TransitionRoutes />
-          </Grid>
-          <Grid item xs={12}>
-              <p style={{marginBottom: "20%"}}></p>
-          </Grid>
+          <Box mt={4} /> {}
+          <Routes>
+            <Route path="/" element={<Homepage />} />
+            <Route path="/mywork" element={<MyWork />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
           <Grid item xs={12}>
             <Footer />
           </Grid>
