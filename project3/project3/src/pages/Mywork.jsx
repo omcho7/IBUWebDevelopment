@@ -29,9 +29,7 @@ function MyWork() {
           <WorkCard
             imgSrc={"https://i.ibb.co/TqYR46M/Slide-4-3-1.png"}
             title={"GDG Poster and Banner"}
-            description={
-              "A poster and banner design for the Google Developer Group (GDG) event, featuring a modern and vibrant design that captures the essence of the event."
-            }
+            description={""}
           />
         </Grid>
         <Grid item xs={12} md={6} display={"flex"} justifyContent={"center"}>
