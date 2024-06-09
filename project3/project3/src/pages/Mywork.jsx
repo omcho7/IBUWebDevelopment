@@ -148,8 +148,54 @@ function MyWork() {
       </Grid>
       <h1 ref={refs.illustration}>Illustrations</h1>
       <Grid container spacing={3}>
-        <Grid item xs={6} md={4}>
-          <WorkCard />
+        <Grid item xs={12} md={6} display={"flex"} justifyContent={"center"}>
+          <WorkCard
+            imgSrc={"https://i.ibb.co/2gvW6hs/Slide-4-3-17.png"}
+            title={"Stray (video game) Fanart"}
+            description={""}
+          />
+        </Grid>
+        <Grid item xs={12} md={6} display={"flex"} justifyContent={"center"}>
+          <WorkCard
+            imgSrc={"https://i.ibb.co/0ffpFvN/Slide-4-3-18.png"}
+            title={"Taxi Driver"}
+            description={""}
+          />
+        </Grid>
+        <Grid item xs={12} md={6} display={"flex"} justifyContent={"center"}>
+          <WorkCard
+            imgSrc={"https://i.ibb.co/Yb9qtbw/Slide-4-3-19.png"}
+            title={"Survivor's Gauntlet Concept Art"}
+            description={""}
+          />
+        </Grid>
+        <Grid item xs={12} md={6} display={"flex"} justifyContent={"center"}>
+          <WorkCard
+            imgSrc={"https://i.ibb.co/nDTDPQt/Slide-4-3-20.png"}
+            title={"Gentle Giant"}
+            description={""}
+          />
+        </Grid>
+        <Grid item xs={12} md={6} display={"flex"} justifyContent={"center"}>
+          <WorkCard
+            imgSrc={"https://i.ibb.co/7ysWkch/Slide-4-3-22.png"}
+            title={"Nissan Skyline GT-R R34 Sketch"}
+            description={""}
+          />
+        </Grid>
+        <Grid item xs={12} md={6} display={"flex"} justifyContent={"center"}>
+          <WorkCard
+            imgSrc={"https://i.ibb.co/BV3ysFH/Slide-4-3-23.png"}
+            title={"Bonfire"}
+            description={""}
+          />
+        </Grid>
+        <Grid item xs={12} md={12} display={"flex"} justifyContent={"center"}>
+          <WorkCard
+            imgSrc={"https://i.ibb.co/LNLY2BC/Slide-4-3-21.png"}
+            title={"The Witcher 3 Fanart"}
+            description={""}
+          />
         </Grid>
       </Grid>
     </div>
