@@ -116,10 +116,14 @@ function Contact() {
               />
             </Grid>
           </Grid>
-          <Grid item xs={12}>
-            <Button sx={{ marginBottom: 50 }} type="submit" variant="contained" color="primary">
+          <Grid item xs={12} sx={{ marginBottom: 10 }}>
+            <Button  type="submit" variant="contained" color="primary">
               Submit
             </Button>
+          </Grid>
+          <Grid item xs={12} sx={{ marginBottom: 50 }}>
+            <h4>Or reach me at:</h4>
+            <p>osmanovicomar@gmail.com</p>
           </Grid>
         </Grid>
       </div>
